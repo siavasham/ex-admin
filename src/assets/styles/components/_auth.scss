@@ -1,0 +1,74 @@
+/* Auth */
+
+.auth {
+  height: 100%;
+  .auth-form-light {
+    background: $card-bg-varient;
+    select {
+      color: $input-placeholder-color;
+    }
+    .input-group {
+      .form-control {
+        &:focus,
+        &:active {
+          border-color: $border-color;
+          background: transparent;
+          color: theme-color(secondary);
+        }
+      }
+    }
+  }
+  .auth-form-transparent {
+    background: transparent;
+    .form-control,
+    .input-group-text {
+      border-color: theme-color(secondary);
+      &:focus,
+      &:active {
+        border-color: theme-color(secondary);
+      }
+    }
+    select {
+      outline-color: theme-color(secondary);
+    }
+  }
+  &.auth-img-bg {
+    padding: 0;
+    .auth-form-transparent {
+      @media (min-width: 768px) {
+        width: 55%;
+        margin: auto;
+      }
+    }
+  }
+  .brand-logo {
+    margin-bottom: 2rem;
+    img {
+      height: 60px;
+    }
+  }
+  form {
+    .form-group {
+      margin-bottom: 0.2rem;
+      label {
+        font-size: 0.8125rem;
+      }
+      .form-control {
+        background: transparent;
+        border-radius: $btn-border-radius;
+        font-size: 0.9375rem;
+        color: $black;
+      }
+    }
+    .auth-form-btn {
+      padding: 1rem 3rem;
+      line-height: 1.5;
+    }
+    .auth-link {
+      font-size: $default-font-size;
+      &:hover {
+        color: initial;
+      }
+    }
+  }
+}

@@ -1,0 +1,141 @@
+.multi-graph {
+  width: 30vw;
+  height: 15vw;
+  position: relative;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.multi-graph:before {
+  content: "";
+  width: 30vw;
+  height: 15vw;
+  border: 6vw solid rgba(0, 0, 0, 0.644);
+  border-bottom: none;
+  position: absolute;
+  box-sizing: border-box;
+  transform-origin: 50% 0%;
+  border-radius: 300px 300px 0 0;
+  left: 0;
+  top: 0;
+}
+.multi-graph .graph {
+  width: 30vw;
+  height: 15vw;
+  border: 6vw solid var(--fill);
+  border-top: none;
+  position: absolute;
+  transform-origin: 50% 0% 0;
+  border-radius: 0 0 300px 300px;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  -webkit-animation: 1s fillGraphAnimation ease-in;
+  animation: 1s fillGraphAnimation ease-in;
+  transform: rotate(calc(1deg * (var(--percentage) * 2.2)));
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.multi-graph .graph:after {
+  content: attr(data) " " counter(varible) "%";
+  counter-reset: varible var(--percentage);
+  background: #333;
+  box-sizing: border-box;
+  color: #fff;
+  font-weight: 200;
+  font-size: 12px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 0.5rem;
+  top: 0px;
+  position: absolute;
+  left: 0;
+  transform: rotate(calc(-1deg * var(--percentage) * 2.2))
+    translate(-60px, -20px);
+  transition: 0.2s ease-in;
+  transform-origin: 0 50% 0;
+  opacity: 0;
+}
+.multi-graph .graph:hover {
+  opacity: 0.8;
+}
+.multi-graph .graph:hover:after {
+  opacity: 1;
+  left: 30px;
+}
+
+@-webkit-keyframes fillAnimation {
+  0% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(135deg);
+  }
+}
+
+@-webkit-keyframes fillGraphAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes fillGraphAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+}
+
+.inline-absolute {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  left: 0;
+}
+.inline-absolute.center {
+  top: 40%;
+}
+
+.rtl .input-group-append .input-group-text,
+.rtl .input-group-prepend .input-group-text {
+  border-radius: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.rtl .input-group > .form-control:not(:first-child) {
+  border-radius: 0;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.form-control:disabled,
+.swal2-modal .swal2-content .swal2-input:disabled,
+.form-control[readonly],
+.swal2-modal .swal2-content .swal2-input[readonly] {
+  background-color: rgba(86, 88, 89, 0.7) !important;
+}
+
+a {
+  color: inherit !important;
+}
+a:hover {
+  text-decoration: none !important;
+}
+
+.MuiPaper-root {
+  box-shadow: none !important;
+}
+.MuiPaper-root * {
+  font-family: iranyekan !important;
+}
