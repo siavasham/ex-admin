@@ -2,11 +2,11 @@ import axios from "axios";
 import { setup } from "axios-cache-adapter";
 export const baseUrl =
   window.location.hostname === "localhost"
-    ? "http://localhost:8000/admin/"
-    : "https://stronghold.live/admin/";
+    ? "http://localhost:8000/"
+    : "https://stronghold.live/";
 const axiosBase = setup({
   axios,
-  baseURL: baseUrl,
+  baseURL: baseUrl + "admin/",
   timeout: 5000,
   validateStatus: function () {
     return true;

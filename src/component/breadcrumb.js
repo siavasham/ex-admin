@@ -1,6 +1,6 @@
 import React from "react";
 import { t } from "locales";
-export default function ({ title, icon }) {
+export default function ({ title, icon, children }) {
   return (
     <div className="page-header">
       <h3 className="page-title">
@@ -11,10 +11,14 @@ export default function ({ title, icon }) {
       </h3>
       <nav aria-label="breadcrumb">
         <ul className="breadcrumb">
-          <li className="breadcrumb-item active" aria-current="page">
-            <span></span>{" "}
-            <i className="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
-          </li>
+          {children ? (
+            children
+          ) : (
+            <li className="breadcrumb-item active" aria-current="page">
+              <span></span>{" "}
+              <i className="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+            </li>
+          )}
         </ul>
       </nav>
     </div>

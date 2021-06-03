@@ -139,6 +139,7 @@ a:hover {
 .MuiPaper-root *,
 .MuiTooltip-tooltip {
   font-family: iranyekan !important;
+  border-bottom: 0 !important;
 }
 .MuiTableCell-head,
 .MuiTableCell-body {
@@ -149,4 +150,39 @@ a:hover {
 }
 .MuiTableCell-alignRight {
   flex-direction: inherit !important;
+}
+.breadcrumb {
+  direction: ltr;
+}
+.ltr {
+  direction: ltr;
+}
+.rdw-editor-main {
+  min-height: 200px;
+  max-height: 400px;
+  border: 1px solid #cfd6e7;
+}
+.news-image {
+  height: 60px;
+  border-radius: 10px;
+}
+.news-img-bg {
+  height: 230px;
+  border: 1px dashed #d8d8d8;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news-img-bg input {
+  display: none;
+}
+.news-img-icon {
+  font-size: 2rem;
+  font-size: 5rem !important;
+  color: #808080;
+}
+.news-img-temp {
+  width: 100%;
+  max-height: 220px;
 }

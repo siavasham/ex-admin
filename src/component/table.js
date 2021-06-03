@@ -1,8 +1,9 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useState } from "react";
 import { t } from "locales";
 import { get, post } from "library/request";
 import useStorage from "reducer";
 import Tick, { TickData } from "component/tick";
+import MaterialTable from "material-table";
 
 import AddBox from "@material-ui/icons/AddBox";
 import ArrowDownward from "@material-ui/icons/ArrowDownward";
@@ -21,7 +22,6 @@ import Search from "@material-ui/icons/Search";
 import ViewColumn from "@material-ui/icons/ViewColumn";
 import AutorenewIcon from "@material-ui/icons/Autorenew";
 
-import MaterialTable from "material-table";
 const tableIcons = {
   Add: forwardRef((props, ref) => <AddBox {...props} ref={ref} />),
   Check: forwardRef((props, ref) => <Check {...props} ref={ref} />),
@@ -45,9 +45,9 @@ const tableIcons = {
   ThirdStateCheck: forwardRef((props, ref) => <Remove {...props} ref={ref} />),
   ViewColumn: forwardRef((props, ref) => <ViewColumn {...props} ref={ref} />),
 };
-export default function ({ link, ...props }) {
+export default function ({ link, actions = [], editable = {}, ...props }) {
   const tableRef = React.createRef();
-
+  const [filter, setFilter] = useState(false);
   const {
     setting: { token },
   } = useStorage();
@@ -61,7 +61,8 @@ export default function ({ link, ...props }) {
           pageSizeOptions: [10, 20, 50, 100],
           addRowPosition: "first",
           mdebounceInterval: 800,
-          filtering: true,
+          filtering: filter,
+          search: false,
         }}
         {...props}
         data={(query) => {
@@ -141,39 +142,30 @@ export default function ({ link, ...props }) {
             isFreeAction: true,
             onClick: () => tableRef.current && tableRef.current.onQueryChange(),
           },
-        ]}
-        // cellEditable={{
-        //   onCellEditApproved: (newValue, oldValue, rowData, columnDef) => {
-        //     return new Promise((resolve, reject) => {
-        //       console.log("newValue: " + newValue);
-        //       setTimeout(resolve, 1000);
-        //     });
-        //   },
-        // }}
-        editable={{
-          onRowAdd: (data) => {
-            return new Promise((resolve, reject) => {
-              post("add", {
-                token,
-                data: JSON.stringify(data),
-                table: link,
-              }).then((res) => {
-                if (res?.success) {
-                  resolve();
-                } else {
-                  reject();
-                }
-              });
-            });
+          {
+            icon: () => <FilterList />,
+            tooltip: "جست و جو",
+            isFreeAction: true,
+            onClick: () => setFilter(!filter),
           },
-          onRowUpdate: (data, oldData) => {
+          ...actions,
+        ]}
+        cellEditable={{
+          onCellEditApproved: (newValue, oldValue, rowData, columnDef) => {
             return new Promise((resolve, reject) => {
+              if (newValue == oldValue) {
+                resolve();
+                return;
+              }
+              const field = columnDef.field;
+              const data = { [field]: newValue, id: rowData.id };
               post("update", {
                 token,
                 data: JSON.stringify(data),
                 table: link,
               }).then((res) => {
                 if (res?.success) {
+                  rowData[field] = newValue;
                   resolve();
                 } else {
                   reject();
@@ -181,20 +173,59 @@ export default function ({ link, ...props }) {
               });
             });
           },
-          onRowDelete: (data) =>
-            new Promise((resolve, reject) => {
-              post("delete", {
-                token,
-                id: data.id,
-                table: link,
-              }).then((res) => {
-                if (res?.success) {
-                  resolve();
-                } else {
-                  reject();
-                }
-              });
-            }),
+        }}
+        editable={{
+          onRowAdd:
+            editable?.canAdd === false
+              ? null
+              : (data) =>
+                  new Promise((resolve, reject) => {
+                    post("add", {
+                      token,
+                      data: JSON.stringify(data),
+                      table: link,
+                    }).then((res) => {
+                      if (res?.success) {
+                        resolve();
+                      } else {
+                        reject();
+                      }
+                    });
+                  }),
+          onRowUpdate:
+            editable?.canEdit === false
+              ? null
+              : (data, oldData) =>
+                  new Promise((resolve, reject) => {
+                    post("update", {
+                      token,
+                      data: JSON.stringify(data),
+                      table: link,
+                    }).then((res) => {
+                      if (res?.success) {
+                        resolve();
+                      } else {
+                        reject();
+                      }
+                    });
+                  }),
+          onRowDelete:
+            editable?.canDelete === false
+              ? null
+              : (data) =>
+                  new Promise((resolve, reject) => {
+                    post("delete", {
+                      token,
+                      id: data.id,
+                      table: link,
+                    }).then((res) => {
+                      if (res?.success) {
+                        resolve();
+                      } else {
+                        reject();
+                      }
+                    });
+                  }),
         }}
       />
     </div>
