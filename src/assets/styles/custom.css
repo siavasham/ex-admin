@@ -136,6 +136,17 @@ a:hover {
 .MuiPaper-root {
   box-shadow: none !important;
 }
-.MuiPaper-root * {
+.MuiPaper-root *,
+.MuiTooltip-tooltip {
   font-family: iranyekan !important;
+}
+.MuiTableCell-head,
+.MuiTableCell-body {
+  text-align: inherit !important;
+}
+.MuiTablePagination-toolbar {
+  flex-direction: row-reverse;
+}
+.MuiTableCell-alignRight {
+  flex-direction: inherit !important;
 }

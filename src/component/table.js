@@ -1,4 +1,8 @@
 import React, { forwardRef } from "react";
+import { t } from "locales";
+import { get, post } from "library/request";
+import useStorage from "reducer";
+import Tick, { TickData } from "component/tick";
 
 import AddBox from "@material-ui/icons/AddBox";
 import ArrowDownward from "@material-ui/icons/ArrowDownward";
@@ -15,6 +19,7 @@ import Remove from "@material-ui/icons/Remove";
 import SaveAlt from "@material-ui/icons/SaveAlt";
 import Search from "@material-ui/icons/Search";
 import ViewColumn from "@material-ui/icons/ViewColumn";
+import AutorenewIcon from "@material-ui/icons/Autorenew";
 
 import MaterialTable from "material-table";
 const tableIcons = {
@@ -28,11 +33,11 @@ const tableIcons = {
   Edit: forwardRef((props, ref) => <Edit {...props} ref={ref} />),
   Export: forwardRef((props, ref) => <SaveAlt {...props} ref={ref} />),
   Filter: forwardRef((props, ref) => <FilterList {...props} ref={ref} />),
-  FirstPage: forwardRef((props, ref) => <FirstPage {...props} ref={ref} />),
-  LastPage: forwardRef((props, ref) => <LastPage {...props} ref={ref} />),
-  NextPage: forwardRef((props, ref) => <ChevronRight {...props} ref={ref} />),
+  FirstPage: forwardRef((props, ref) => <LastPage {...props} ref={ref} />),
+  LastPage: forwardRef((props, ref) => <FirstPage {...props} ref={ref} />),
+  NextPage: forwardRef((props, ref) => <ChevronLeft {...props} ref={ref} />),
   PreviousPage: forwardRef((props, ref) => (
-    <ChevronLeft {...props} ref={ref} />
+    <ChevronRight {...props} ref={ref} />
   )),
   ResetSearch: forwardRef((props, ref) => <Clear {...props} ref={ref} />),
   Search: forwardRef((props, ref) => <Search {...props} ref={ref} />),
@@ -40,36 +45,61 @@ const tableIcons = {
   ThirdStateCheck: forwardRef((props, ref) => <Remove {...props} ref={ref} />),
   ViewColumn: forwardRef((props, ref) => <ViewColumn {...props} ref={ref} />),
 };
-export default function (props) {
+export default function ({ link, ...props }) {
+  const tableRef = React.createRef();
+
+  const {
+    setting: { token },
+  } = useStorage();
   return (
-    <div>
+    <div className="card px-3">
       <MaterialTable
+        tableRef={tableRef}
         icons={tableIcons}
+        options={{
+          pageSize: 10,
+          pageSizeOptions: [10, 20, 50, 100],
+          addRowPosition: "first",
+          mdebounceInterval: 800,
+          filtering: true,
+        }}
         {...props}
         data={(query) => {
-          console.log(query);
+          const data = {
+            orderBy:
+              query?.orderBy?.field != undefined ? query?.orderBy?.field : "",
+            orderDirection: query?.orderDirection,
+            search: query?.search,
+            page: query?.page,
+            pageSize: query?.pageSize,
+          };
           return new Promise((resolve, reject) => {
-            resolve({
-              data: [],
-              page: 1,
-              totalCount: 200,
+            post("list", { token, ...data, table: link }).then((res) => {
+              if (res?.success) {
+                resolve({
+                  data: res?.success?.data,
+                  totalCount: res?.success?.total,
+                  page: +res?.success?.page,
+                });
+              } else {
+                reject();
+              }
             });
           });
         }}
-        editable={{}}
         localization={{
           body: {
-            emptyDataSourceMessage: "Keine Einträge",
-            addTooltip: "Hinzufügen",
-            deleteTooltip: "Löschen",
-            editTooltip: "Bearbeiten",
+            emptyDataSourceMessage: "اطلاعاتی یافت نشد",
+            addTooltip: "افزودن",
+            deleteTooltip: "حذف",
+            editTooltip: "ویرایش",
             filterRow: {
-              filterTooltip: "Filter",
+              filterTooltip: "فیلتر",
             },
             editRow: {
-              deleteText: "Diese Zeile wirklich löschen?",
-              cancelTooltip: "Abbrechen",
-              saveTooltip: "Speichern",
+              deleteText: "آیا برای حذف کردن مطمعن هستین",
+              cancelTooltip: "انصراف",
+              saveTooltip: "ذخیره",
             },
           },
           grouping: {
@@ -77,35 +107,98 @@ export default function (props) {
             groupedBy: "Gruppiert nach:",
           },
           header: {
-            actions: "Aktionen",
+            actions: "ابزار ها",
           },
           pagination: {
-            labelDisplayedRows: "{from}-{to} von {count}",
-            labelRowsSelect: "Zeilen",
+            labelDisplayedRows: "{from}-{to} از {count}",
+            labelRowsSelect: "ردیف",
             labelRowsPerPage: "Zeilen pro Seite:",
-            firstAriaLabel: "Erste Seite",
-            firstTooltip: "Erste Seite",
-            previousAriaLabel: "Vorherige Seite",
-            previousTooltip: "Vorherige Seite",
-            nextAriaLabel: "Nächste Seite",
-            nextTooltip: "Nächste Seite",
-            lastAriaLabel: "Letzte Seite",
-            lastTooltip: "Letzte Seite",
+            firstAriaLabel: "اولین صفحه",
+            firstTooltip: "اولین صفحه",
+            previousAriaLabel: "صفحه قبلی",
+            previousTooltip: "صفحه قبلی",
+            nextAriaLabel: "صفحه بعدی",
+            nextTooltip: "صفحه بعدی",
+            lastAriaLabel: "اخرین صفحه",
+            lastTooltip: "اخرین صفحه",
           },
           toolbar: {
             addRemoveColumns: "Spalten hinzufügen oder löschen",
             nRowsSelected: "{0} Zeile(n) ausgewählt",
-            showColumnsTitle: "Zeige Spalten",
-            showColumnsAriaLabel: "Zeige Spalten",
-            exportTitle: "Export",
-            exportAriaLabel: "Export",
-            exportName: "Export als CSV",
-            searchTooltip: "Suche",
-            searchPlaceholder: "Suche",
+            showColumnsTitle: "نمایش ستون ها",
+            showColumnsAriaLabel: "نمایش ستون ها",
+            exportTitle: "خروجی",
+            exportAriaLabel: "خروجی",
+            exportName: "خروجی csv",
+            searchTooltip: "جست و جو",
+            searchPlaceholder: "جست و جو",
           },
         }}
-        align="inherit"
+        actions={[
+          {
+            icon: () => <AutorenewIcon />,
+            tooltip: "ریفرش",
+            isFreeAction: true,
+            onClick: () => tableRef.current && tableRef.current.onQueryChange(),
+          },
+        ]}
+        // cellEditable={{
+        //   onCellEditApproved: (newValue, oldValue, rowData, columnDef) => {
+        //     return new Promise((resolve, reject) => {
+        //       console.log("newValue: " + newValue);
+        //       setTimeout(resolve, 1000);
+        //     });
+        //   },
+        // }}
+        editable={{
+          onRowAdd: (data) => {
+            return new Promise((resolve, reject) => {
+              post("add", {
+                token,
+                data: JSON.stringify(data),
+                table: link,
+              }).then((res) => {
+                if (res?.success) {
+                  resolve();
+                } else {
+                  reject();
+                }
+              });
+            });
+          },
+          onRowUpdate: (data, oldData) => {
+            return new Promise((resolve, reject) => {
+              post("update", {
+                token,
+                data: JSON.stringify(data),
+                table: link,
+              }).then((res) => {
+                if (res?.success) {
+                  resolve();
+                } else {
+                  reject();
+                }
+              });
+            });
+          },
+          onRowDelete: (data) =>
+            new Promise((resolve, reject) => {
+              post("delete", {
+                token,
+                id: data.id,
+                table: link,
+              }).then((res) => {
+                if (res?.success) {
+                  resolve();
+                } else {
+                  reject();
+                }
+              });
+            }),
+        }}
       />
     </div>
   );
 }
+
+export { Tick, TickData };
