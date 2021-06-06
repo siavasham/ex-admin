@@ -93,14 +93,14 @@ const Sidebar = (props) => {
             <i className="mdi mdi mdi-coin menu-icon"></i>
           </Link>
         </li>
-        <li
+        {/* <li
           className={isPathActive("/setting") ? "nav-item active" : "nav-item"}
         >
           <Link className="nav-link" to="/setting">
             <span className="menu-title">{t("setting")}</span>
             <i className="mdi mdi-settings menu-icon"></i>
           </Link>
-        </li>
+        </li> */}
         <li
           className={isPathActive("/ticket") ? "nav-item active" : "nav-item"}
         >
@@ -117,79 +117,38 @@ const Sidebar = (props) => {
             <i className="mdi mdi-chart-line menu-icon"></i>
           </Link>
         </li>
-        <li
-          className={isPathActive("/profile") ? "nav-item active" : "nav-item"}
-        >
-          <Link className="nav-link" to="/profile">
-            <span className="menu-title">{t("profile")}</span>
-            <i className="mdi mdi-account menu-icon"></i>
-          </Link>
-        </li>
 
-        {/* <li
-            className={
-              isPathActive("/basic-ui") ? "nav-item active" : "nav-item"
-            }
+        <li
+          className={isPathActive("/setting") ? "nav-item active" : "nav-item"}
+        >
+          <div
+            className={state.setting ? "nav-link menu-expanded" : "nav-link"}
+            onClick={() => toggleMenuState("setting")}
+            data-toggle="collapse"
           >
-            <div
-              className={
-                state.basicUiMenuOpen
-                  ? "nav-link menu-expanded"
-                  : "nav-link"
-              }
-              onClick={() => toggleMenuState("basicUiMenuOpen")}
-              data-toggle="collapse"
-            >
-              <span className="menu-title">
-                <Trans>Basic UI Elements</Trans>
-              </span>
-              <i className="menu-arrow"></i>
-              <i className="mdi mdi-crosshairs-gps menu-icon"></i>
-            </div>
-            <Collapse in={state.basicUiMenuOpen}>
-              <ul className="nav flex-column sub-menu">
-                <li className="nav-item">
-                  {" "}
-                  <Link
-                    className={
-                      isPathActive("/basic-ui/buttons")
-                        ? "nav-link active"
-                        : "nav-link"
-                    }
-                    to="/basic-ui/buttons"
-                  >
-                    <Trans>Buttons</Trans>
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  {" "}
-                  <Link
-                    className={
-                      isPathActive("/basic-ui/dropdowns")
-                        ? "nav-link active"
-                        : "nav-link"
-                    }
-                    to="/basic-ui/dropdowns"
-                  >
-                    <Trans>Dropdowns</Trans>
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  {" "}
-                  <Link
-                    className={
-                      isPathActive("/basic-ui/typography")
-                        ? "nav-link active"
-                        : "nav-link"
-                    }
-                    to="/basic-ui/typography"
-                  >
-                    <Trans>Typography</Trans>
-                  </Link>
-                </li>
-              </ul>
-            </Collapse>
-          </li>
+            <span className="menu-title">{t("setting")}</span>
+            <i className="menu-arrow"></i>
+            <i className="mdi mdi-settings menu-icon"></i>
+          </div>
+          <Collapse in={state.setting}>
+            <ul className="nav flex-column sub-menu">
+              <li className="nav-item">
+                {" "}
+                <Link
+                  className={
+                    isPathActive("/setting/constans")
+                      ? "nav-link active"
+                      : "nav-link"
+                  }
+                  to="/setting/constans"
+                >
+                  {t("constans")}
+                </Link>
+              </li>
+            </ul>
+          </Collapse>
+        </li>
+        {/*
           <li
             className={
               isPathActive("/form-elements")

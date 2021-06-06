@@ -1,0 +1,2668 @@
+@font-face {
+  font-family: "iconfont";
+  src: url(../icons/iconfont.ttf) format("truetype");
+}
+
+.icon {
+  line-height: 1;
+}
+
+.icon:before {
+  font-family: iconfont !important;
+  font-style: normal;
+  font-weight: normal !important;
+  vertical-align: top;
+}
+
+.icon-1st:before {
+  content: "\f101";
+}
+.icon-aave:before {
+  content: "\f102";
+}
+.icon-abyss:before {
+  content: "\f103";
+}
+.icon-ada:before {
+  content: "\f104";
+}
+.icon-ae:before {
+  content: "\f105";
+}
+.icon-algo:before {
+  content: "\f106";
+}
+.icon-ama:before {
+  content: "\f107";
+}
+.icon-ant:before {
+  content: "\f108";
+}
+.icon-apl:before {
+  content: "\f109";
+}
+.icon-ark:before {
+  content: "\f10a";
+}
+.icon-atom:before {
+  content: "\f10b";
+}
+.icon-ava:before {
+  content: "\f10c";
+}
+.icon-awc-bnb:before {
+  content: "\f10d";
+}
+.icon-awc-erc20:before {
+  content: "\f10e";
+}
+.icon-awc:before {
+  content: "\f10f";
+}
+.icon-band:before {
+  content: "\f110";
+}
+.icon-bat:before {
+  content: "\f111";
+}
+.icon-bcd:before {
+  content: "\f112";
+}
+.icon-bch:before {
+  content: "\f113";
+}
+.icon-bcn:before {
+  content: "\f114";
+}
+.icon-bnb:before {
+  content: "\f115";
+}
+.icon-bnt:before {
+  content: "\f116";
+}
+.icon-brd:before {
+  content: "\f117";
+}
+.icon-bsv:before {
+  content: "\f118";
+}
+.icon-btc:before {
+  content: "\f119";
+}
+.icon-ir:before {
+  font-family: Georgia, "Times New Roman" !important;
+  content: "IR";
+  font-size: 1.2rem;
+}
+.icon-btg:before {
+  content: "\f11a";
+}
+.icon-btt:before {
+  content: "\f11b";
+}
+.icon-busd:before {
+  content: "\f11c";
+}
+.icon-cdt:before {
+  content: "\f11d";
+}
+.icon-celr:before {
+  content: "\f11e";
+}
+.icon-comp:before {
+  content: "\f11f";
+}
+.icon-cos:before {
+  content: "\f120";
+}
+.icon-coti:before {
+  content: "\f121";
+}
+.icon-cro:before {
+  content: "\f122";
+}
+.icon-cs:before {
+  content: "\f123";
+}
+.icon-ctsi:before {
+  content: "\f124";
+}
+.icon-cvc:before {
+  content: "\f125";
+}
+.icon-dag:before {
+  content: "\f126";
+}
+.icon-dai:before {
+  content: "\f127";
+}
+.icon-dash:before {
+  content: "\f128";
+}
+.icon-dcn:before {
+  content: "\f129";
+}
+.icon-dcr:before {
+  content: "\f12a";
+}
+.icon-dent:before {
+  content: "\f12b";
+}
+.icon-dgb:before {
+  content: "\f12c";
+}
+.icon-dgd:before {
+  content: "\f12d";
+}
+.icon-dgtx:before {
+  content: "\f12e";
+}
+.icon-dnt:before {
+  content: "\f12f";
+}
+.icon-doge:before {
+  content: "\f130";
+}
+.icon-dot:before {
+  content: "\f131";
+}
+.icon-edg:before {
+  content: "\f132";
+}
+.icon-ela:before {
+  content: "\f133";
+}
+.icon-elf:before {
+  content: "\f134";
+}
+.icon-eng:before {
+  content: "\f135";
+}
+.icon-enj:before {
+  content: "\f136";
+}
+.icon-eos:before {
+  content: "\f137";
+}
+.icon-erc20:before {
+  content: "\f138";
+}
+.icon-etc:before {
+  content: "\f139";
+}
+.icon-eth:before {
+  content: "\f13a";
+}
+.icon-eurs:before {
+  content: "\f13b";
+}
+.icon-fil:before {
+  content: "\f13c";
+}
+.icon-ftt:before {
+  content: "\f13d";
+}
+.icon-fun:before {
+  content: "\f13e";
+}
+.icon-gas:before {
+  content: "\f13f";
+}
+.icon-gno:before {
+  content: "\f140";
+}
+.icon-gnt:before {
+  content: "\f141";
+}
+.icon-grid:before {
+  content: "\f142";
+}
+.icon-grs:before {
+  content: "\f143";
+}
+.icon-gto:before {
+  content: "\f144";
+}
+.icon-gusd:before {
+  content: "\f145";
+}
+.icon-hbar:before {
+  content: "\f146";
+}
+.icon-hex:before {
+  content: "\f147";
+}
+.icon-hmq:before {
+  content: "\f148";
+}
+.icon-hot:before {
+  content: "\f149";
+}
+.icon-hydro:before {
+  content: "\f14a";
+}
+.icon-icx:before {
+  content: "\f14b";
+}
+.icon-iqn:before {
+  content: "\f14c";
+}
+.icon-job:before {
+  content: "\f14d";
+}
+.icon-kin:before {
+  content: "\f14e";
+}
+.icon-kmd:before {
+  content: "\f14f";
+}
+.icon-knc:before {
+  content: "\f150";
+}
+.icon-lend:before {
+  content: "\f151";
+}
+.icon-leo:before {
+  content: "\f152";
+}
+.icon-link:before {
+  content: "\f153";
+}
+.icon-lrc:before {
+  content: "\f154";
+}
+.icon-lsk:before {
+  content: "\f155";
+}
+.icon-ltc:before {
+  content: "\f156";
+}
+.icon-lun:before {
+  content: "\f157";
+}
+.icon-luna:before {
+  content: "\f158";
+}
+.icon-mana:before {
+  content: "\f159";
+}
+.icon-matic:before {
+  content: "\f15a";
+}
+.icon-mco:before {
+  content: "\f15b";
+}
+.icon-mkr:before {
+  content: "\f15c";
+}
+.icon-mln:before {
+  content: "\f15d";
+}
+.icon-mona:before {
+  content: "\f15e";
+}
+.icon-mth:before {
+  content: "\f15f";
+}
+.icon-mtl:before {
+  content: "\f160";
+}
+.icon-music:before {
+  content: "\f161";
+}
+.icon-nano:before {
+  content: "\f162";
+}
+.icon-nas:before {
+  content: "\f163";
+}
+.icon-nem:before {
+  content: "\f164";
+}
+.icon-neo:before {
+  content: "\f165";
+}
+.icon-nexo:before {
+  content: "\f166";
+}
+.icon-nmr:before {
+  content: "\f167";
+}
+.icon-now:before {
+  content: "\f168";
+}
+.icon-npxs:before {
+  content: "\f169";
+}
+.icon-nuls:before {
+  content: "\f16a";
+}
+.icon-ogn:before {
+  content: "\f16b";
+}
+.icon-omg:before {
+  content: "\f16c";
+}
+.icon-ong:before {
+  content: "\f16d";
+}
+.icon-ont:before {
+  content: "\f16e";
+}
+.icon-pax:before {
+  content: "\f16f";
+}
+.icon-pay:before {
+  content: "\f170";
+}
+.icon-pma:before {
+  content: "\f171";
+}
+.icon-poly:before {
+  content: "\f172";
+}
+.icon-pot:before {
+  content: "\f173";
+}
+.icon-powr:before {
+  content: "\f174";
+}
+.icon-ppt:before {
+  content: "\f175";
+}
+.icon-ptoy:before {
+  content: "\f176";
+}
+.icon-qtum:before {
+  content: "\f177";
+}
+.icon-rcn:before {
+  content: "\f178";
+}
+.icon-ren:before {
+  content: "\f179";
+}
+.icon-rep:before {
+  content: "\f17a";
+}
+.icon-req:before {
+  content: "\f17b";
+}
+.icon-rlc:before {
+  content: "\f17c";
+}
+.icon-rsr:before {
+  content: "\f17d";
+}
+.icon-rsv:before {
+  content: "\f17e";
+}
+.icon-rune:before {
+  content: "\f17f";
+}
+.icon-rvn:before {
+  content: "\f180";
+}
+.icon-salt:before {
+  content: "\f181";
+}
+.icon-sc:before {
+  content: "\f182";
+}
+.icon-sent:before {
+  content: "\f183";
+}
+.icon-shr:before {
+  content: "\f184";
+}
+.icon-smart:before {
+  content: "\f185";
+}
+.icon-snm:before {
+  content: "\f186";
+}
+.icon-snx:before {
+  content: "\f187";
+}
+.icon-soul:before {
+  content: "\f188";
+}
+.icon-storj:before {
+  content: "\f189";
+}
+.icon-swt:before {
+  content: "\f18a";
+}
+.icon-tomo:before {
+  content: "\f18b";
+}
+.icon-tpay:before {
+  content: "\f18c";
+}
+.icon-trx:before {
+  content: "\f18d";
+}
+.icon-tusd:before {
+  content: "\f18e";
+}
+.icon-ubq:before {
+  content: "\f18f";
+}
+.icon-uni:before {
+  content: "\f190";
+}
+.icon-usdc:before {
+  content: "\f191";
+}
+.icon-usds:before {
+  content: "\f192";
+}
+.icon-usdt:before {
+  content: "\f193";
+}
+.icon-vet:before {
+  content: "\f194";
+}
+.icon-vgx:before {
+  content: "\f195";
+}
+.icon-vib:before {
+  content: "\f196";
+}
+.icon-vidt:before {
+  content: "\f197";
+}
+.icon-vtc:before {
+  content: "\f198";
+}
+.icon-vtho:before {
+  content: "\f199";
+}
+.icon-wan:before {
+  content: "\f19a";
+}
+.icon-waves:before {
+  content: "\f19b";
+}
+.icon-wink:before {
+  content: "\f19c";
+}
+.icon-wtc:before {
+  content: "\f19d";
+}
+.icon-xem:before {
+  content: "\f19e";
+}
+.icon-xlm:before {
+  content: "\f19f";
+}
+.icon-xmr:before {
+  content: "\f1a0";
+}
+.icon-xrp:before {
+  content: "\f1a1";
+}
+.icon-xtz:before {
+  content: "\f1a2";
+}
+.icon-xvg:before {
+  content: "\f1a3";
+}
+.icon-yec:before {
+  content: "\f1a4";
+}
+.icon-zec:before {
+  content: "\f1a5";
+}
+.icon-zen:before {
+  content: "\f1a6";
+}
+.icon-zil:before {
+  content: "\f1a7";
+}
+.icon-zrx:before {
+  content: "\f1a8";
+}
+
+/*! nouislider - 14.6.3 - 11/19/2020 */
+.noUi-target,
+.noUi-target * {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.noUi-target {
+  position: relative;
+}
+.noUi-base,
+.noUi-connects {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.noUi-connects {
+  overflow: hidden;
+  z-index: 0;
+}
+.noUi-connect,
+.noUi-origin {
+  will-change: transform;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  -webkit-transform-style: preserve-3d;
+  transform-origin: 0 0;
+  transform-style: flat;
+}
+.noUi-connect {
+  height: 100%;
+  width: 100%;
+}
+.noUi-origin {
+  height: 10%;
+  width: 10%;
+}
+.noUi-txt-dir-rtl.noUi-horizontal .noUi-origin {
+  left: 0;
+  right: auto;
+}
+.noUi-vertical .noUi-origin {
+  width: 0;
+}
+.noUi-horizontal .noUi-origin {
+  height: 0;
+}
+.noUi-handle {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+}
+.noUi-touch-area {
+  height: 100%;
+  width: 100%;
+}
+.noUi-state-tap .noUi-connect,
+.noUi-state-tap .noUi-origin {
+  -webkit-transition: transform 0.3s;
+  transition: transform 0.3s;
+}
+.noUi-state-drag * {
+  cursor: inherit !important;
+}
+.noUi-horizontal {
+  height: 18px;
+}
+.noUi-horizontal .noUi-handle {
+  width: 34px;
+  height: 28px;
+  right: -17px;
+  top: -6px;
+}
+.noUi-vertical {
+  width: 18px;
+}
+.noUi-vertical .noUi-handle {
+  width: 28px;
+  height: 34px;
+  right: -6px;
+  top: -17px;
+}
+.noUi-txt-dir-rtl.noUi-horizontal .noUi-handle {
+  left: -17px;
+  right: auto;
+}
+.noUi-target {
+  background: #fafafa;
+  border-radius: 4px;
+  border: 1px solid #d3d3d3;
+  box-shadow: inset 0 1px 1px #f0f0f0, 0 3px 6px -5px #bbb;
+}
+.noUi-connects {
+  border-radius: 3px;
+}
+.noUi-connect {
+  background: #3fb8af;
+}
+.noUi-draggable {
+  cursor: ew-resize;
+}
+.noUi-vertical .noUi-draggable {
+  cursor: ns-resize;
+}
+.noUi-handle {
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  background: #fff;
+  cursor: default;
+  box-shadow: inset 0 0 1px #fff, inset 0 1px 7px #ebebeb, 0 3px 6px -3px #bbb;
+}
+.noUi-active {
+  box-shadow: inset 0 0 1px #fff, inset 0 1px 7px #ddd, 0 3px 6px -3px #bbb;
+}
+.noUi-handle:after,
+.noUi-handle:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 14px;
+  width: 1px;
+  background: #e8e7e6;
+  left: 14px;
+  top: 6px;
+}
+.noUi-handle:after {
+  left: 17px;
+}
+.noUi-vertical .noUi-handle:after,
+.noUi-vertical .noUi-handle:before {
+  width: 14px;
+  height: 1px;
+  left: 6px;
+  top: 14px;
+}
+.noUi-vertical .noUi-handle:after {
+  top: 17px;
+}
+[disabled] .noUi-connect {
+  background: #b8b8b8;
+}
+[disabled] .noUi-handle,
+[disabled].noUi-handle,
+[disabled].noUi-target {
+  cursor: not-allowed;
+}
+.noUi-pips,
+.noUi-pips * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.noUi-pips {
+  position: absolute;
+  color: #999;
+}
+.noUi-value {
+  position: absolute;
+  white-space: nowrap;
+  text-align: center;
+}
+.noUi-value-sub {
+  color: #ccc;
+  font-size: 10px;
+}
+.noUi-marker {
+  position: absolute;
+  background: #ccc;
+}
+.noUi-marker-sub {
+  background: #aaa;
+}
+.noUi-marker-large {
+  background: #aaa;
+}
+.noUi-pips-horizontal {
+  padding: 10px 0;
+  height: 80px;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+.noUi-value-horizontal {
+  -webkit-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+}
+.noUi-rtl .noUi-value-horizontal {
+  -webkit-transform: translate(50%, 50%);
+  transform: translate(50%, 50%);
+}
+.noUi-marker-horizontal.noUi-marker {
+  margin-left: -1px;
+  width: 2px;
+  height: 5px;
+}
+.noUi-marker-horizontal.noUi-marker-sub {
+  height: 10px;
+}
+.noUi-marker-horizontal.noUi-marker-large {
+  height: 15px;
+}
+.noUi-pips-vertical {
+  padding: 0 10px;
+  height: 100%;
+  top: 0;
+  left: 100%;
+}
+.noUi-value-vertical {
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding-left: 25px;
+}
+.noUi-rtl .noUi-value-vertical {
+  -webkit-transform: translate(0, 50%);
+  transform: translate(0, 50%);
+}
+.noUi-marker-vertical.noUi-marker {
+  width: 5px;
+  height: 2px;
+  margin-top: -1px;
+}
+.noUi-marker-vertical.noUi-marker-sub {
+  width: 10px;
+}
+.noUi-marker-vertical.noUi-marker-large {
+  width: 15px;
+}
+.noUi-tooltip {
+  display: block;
+  position: absolute;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  background: #fff;
+  color: #000;
+  padding: 5px;
+  text-align: center;
+  white-space: nowrap;
+}
+.noUi-horizontal .noUi-tooltip {
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  left: 50%;
+  bottom: 120%;
+}
+.noUi-vertical .noUi-tooltip {
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  top: 50%;
+  right: 120%;
+}
+.noUi-horizontal .noUi-origin > .noUi-tooltip {
+  -webkit-transform: translate(50%, 0);
+  transform: translate(50%, 0);
+  left: auto;
+  bottom: 10px;
+}
+.noUi-vertical .noUi-origin > .noUi-tooltip {
+  -webkit-transform: translate(0, -18px);
+  transform: translate(0, -18px);
+  top: auto;
+  right: 28px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+audio,
+video {
+  display: block;
+}
+img {
+  display: block;
+  border: none;
+  max-width: 100%;
+}
+iframe {
+  border: none;
+}
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: inherit;
+}
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+abbr {
+  border: none;
+  text-decoration: none;
+}
+b,
+strong {
+  font-weight: inherit;
+}
+i,
+em {
+  font-style: inherit;
+}
+dfn {
+  font-style: inherit;
+}
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+small {
+  font-size: inherit;
+}
+sub,
+sup {
+  position: relative;
+  vertical-align: baseline;
+  font-size: inherit;
+  line-height: 0;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-align: left;
+  text-transform: none;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+textarea {
+  resize: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: none;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+[type="search"] {
+  outline: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+::-moz-placeholder {
+  color: inherit;
+  opacity: 1;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+:-moz-placeholder {
+  color: inherit;
+  opacity: 1;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+:-ms-input-placeholder {
+  color: inherit;
+  opacity: 1;
+  -ms-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+:focus::-moz-placeholder {
+  opacity: 0;
+}
+:focus:-moz-placeholder {
+  opacity: 0;
+}
+:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+a {
+  outline: none;
+}
+button {
+  outline: none;
+}
+input:focus {
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+textarea {
+  outline: none;
+}
+@font-face {
+  font-family: "AtomicWallet";
+  src: url(../icons/iconfont.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: "AtomicWallet" !important;
+  -xv-speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: normal;
+  font-size: 3em;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 1px;
+}
+.icon-coti,
+.bg-coti {
+  background: linear-gradient(180deg, #38bde3 0%, #2a509b 100%);
+}
+.icon-busd,
+.bg-busd {
+  background: linear-gradient(180deg, #f9c31b 0%, #d5a50f 107.19%);
+}
+.icon-tomo,
+.bg-tomo {
+  background: linear-gradient(150.12deg, #ff784d 14.2%, #ffcc4d 80.69%);
+}
+.icon-hbar,
+.bg-hbar {
+  background: linear-gradient(180deg, #f3f3f3 0%, #8f8dff 100%);
+}
+.icon-aave,
+.bg-aave,
+.icon-lend,
+.bg-lend {
+  background: linear-gradient(180deg, #31abbc -10.77%, #a74b95 100%);
+}
+.icon-vtc,
+.bg-vtc {
+  background: linear-gradient(180deg, #26db8d 0%, #1b5c2e 100%);
+}
+.icon-music,
+.bg-music {
+  background: linear-gradient(71.57deg, #fec101 22.5%, #ff9601 74.42%);
+}
+.icon-ela,
+.bg-ela {
+  background: linear-gradient(180deg, #6da5c9 0%, #50488d 107.69%);
+}
+.icon-fil,
+.bg-fil {
+  background: linear-gradient(180deg, #46eefa -0.87%, #008e98 105.38%);
+}
+.icon-erc20,
+.bg-erc20 {
+  background: linear-gradient(to bottom, #e7f8ff 0%, #627eea 100%);
+}
+.icon-ogn:before {
+  color: #516ffa;
+}
+.icon-ogn,
+.bg-ogn {
+  background: linear-gradient(71.57deg, #0e9de5 22.5%, #26db8d 74.42%);
+}
+.icon-band:before {
+  color: #516ffa;
+}
+.icon-band,
+.bg-band {
+  background: linear-gradient(71.57deg, #0e9de5 22.5%, #26db8d 74.42%);
+}
+.icon-zen,
+.bg-zen {
+  background: linear-gradient(71.57deg, #0e9de5 22.5%, #26db8d 74.42%);
+}
+.icon-wan,
+.bg-wan {
+  background: linear-gradient(180deg, #3fbced 0%, #1269ab 140%);
+}
+.icon-ubq,
+.bg-ubq {
+  background: linear-gradient(180deg, #00ea90 0%, #507c6b 100%);
+}
+.icon-sc,
+.bg-sc {
+  background: linear-gradient(180deg, #20ee82 0%, #00b355 100%);
+}
+.icon-dot,
+.bg-dot {
+  background: linear-gradient(to bottom, #e6007a 0%, #e6007a 100%);
+}
+.icon-nano,
+.bg-nano {
+  background: linear-gradient(180deg, #65adff 0%, #3587db 100%);
+}
+.icon-vgx,
+.bg-vgx {
+  background: linear-gradient(180deg, #6b72ff 0%, #4e48dd 107.69%);
+}
+.icon-apl,
+.bg-apl {
+  background: linear-gradient(180deg, #f3f3f3 0%, #8f8dff 100%);
+}
+.icon-algo,
+.bg-algo {
+  background: linear-gradient(180deg, #e4e4e4 0%, #aaa 100%);
+}
+.icon-bcn,
+.bg-bcn {
+  background: linear-gradient(180deg, #ff66a3 0%, #f04086 100%);
+}
+.icon-grc,
+.bg-grc {
+  background: linear-gradient(180deg, #cd99ff 0%, #7d02f1 114.34%);
+}
+.icon-pot,
+.bg-pot {
+  background: #105b2f;
+}
+.icon-mona,
+.bg-mona {
+  background: #dadada;
+}
+.icon-music,
+.bg-music {
+  background: linear-gradient(71.57deg, #fec101 22.5%, #ff9601 74.42%);
+}
+.icon-luna,
+.bg-luna {
+  background: linear-gradient(180deg, #f8d768 0%, #ed773b 100%);
+}
+.icon-default,
+.bg-default {
+  background: linear-gradient(to bottom, #e4c079 0%, #bd974c 100%);
+}
+.icon-dgtx,
+.bg-dgtx {
+  background: linear-gradient(to bottom, #1cb7ed 0%, #7b32e8 100%);
+}
+.icon-yec,
+.bg-yec {
+  background: linear-gradient(to bottom, #6680f7 0%, #4054b2 100%);
+}
+.icon-rvn,
+.bg-rvn {
+  background: linear-gradient(to bottom, #ff820b 0%, #5b73ff 100%);
+}
+.icon-kmd,
+.bg-kmd {
+  background: linear-gradient(to bottom, #00ecd5 0%, #1b456f 100%);
+}
+.icon-gram,
+.bg-gram {
+  background: linear-gradient(to bottom, #00afe6 0%, #00afe6 100%);
+}
+.icon-xvg,
+.bg-xvg {
+  background: linear-gradient(to bottom, #0098bf 0%, #01cbfd 100%);
+}
+.icon-wink,
+.bg-wink {
+  background: linear-gradient(to bottom, #ffd851 0%, #fbc509 100%);
+}
+.icon-xmr,
+.bg-xmr {
+  background: linear-gradient(to bottom, #ef7d48 0%, #fd6709 100%);
+}
+.icon-zrx,
+.bg-zrx {
+  background: linear-gradient(to bottom, #969696 0%, #545454 100%);
+}
+.icon-zil,
+.bg-zil {
+  background: linear-gradient(to bottom, #49c1bf 0%, #298e97 100%);
+}
+.icon-zec,
+.bg-zec {
+  background: linear-gradient(to bottom, #f8d175 0%, #ecb244 100%);
+}
+.icon-xtz,
+.bg-xtz {
+  background: linear-gradient(to bottom, #888 0%, #8a8a8a 100%);
+}
+.icon-xrp,
+.bg-xrp {
+  background: linear-gradient(to bottom, #52b3ff 0%, #2989d8 100%);
+}
+.icon-wings,
+.bg-wings {
+  background: linear-gradient(to bottom, #93f2ff 0%, #0dc9f7 100%);
+}
+.icon-wax,
+.bg-wax {
+  background: linear-gradient(to bottom, #ffcd41 0%, #ff6b00 100%);
+}
+.icon-vib,
+.bg-vib {
+  background: linear-gradient(to bottom, #ed5250 0%, #ff1f43 100%);
+}
+.icon-usdc,
+.bg-usdc {
+  background: linear-gradient(to bottom, #3998ff 0%, #2775ca 100%);
+}
+.icon-tusd,
+.bg-tusd {
+  background: linear-gradient(to bottom, #6cb0fd 0%, #494dfc 100%);
+}
+.icon-trx,
+.bg-trx {
+  background: linear-gradient(to bottom, #fc2d38 0%, #a50009 100%);
+}
+.icon-trst,
+.bg-trst {
+  background: linear-gradient(to bottom, #8beeca 0%, #63c6bb 100%);
+}
+.icon-swt,
+.bg-swt {
+  background: linear-gradient(to bottom, #fde785 0%, #efd96f 100%);
+}
+.icon-stx,
+.bg-stx {
+  background: linear-gradient(to bottom, #51b5f8 0%, #7020f0 100%);
+}
+.icon-storj,
+.bg-storj {
+  background: linear-gradient(to bottom, #61b3fa 0%, #2683ff 100%);
+}
+.icon-snm,
+.bg-snm {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-skin,
+.bg-skin {
+  background: linear-gradient(to bottom, #00e9f1 0%, #005584 100%);
+}
+.icon-salt,
+.bg-salt {
+  background: linear-gradient(to bottom, #1beef4 0%, #02e1c9 100%);
+}
+.icon-rlc,
+.bg-rlc {
+  background: linear-gradient(to bottom, #fde785 0%, #ffd800 100%);
+}
+.icon-r,
+.bg-r {
+  background: linear-gradient(to bottom, #e4007f 0%, #8900bf 100%);
+}
+.icon-rep,
+.bg-rep {
+  background: linear-gradient(to bottom, #ff6c88 0%, #6e2f5e 100%);
+}
+.icon-rcn,
+.bg-rcn {
+  background: linear-gradient(to bottom, #00a4ff 0%, #3555f9 100%);
+}
+.icon-qtum,
+.bg-qtum {
+  background: linear-gradient(to bottom, #41d4fc 0%, #2e9ad0 100%);
+}
+.icon-ptoy,
+.bg-ptoy {
+  background: linear-gradient(to bottom, #ed5250 0%, #db0029 100%);
+}
+.icon-ppt,
+.bg-ppt {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-powr,
+.bg-powr {
+  background: linear-gradient(to bottom, #8beeca 0%, #05bca9 100%);
+}
+.icon-poly,
+.bg-poly {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-pay,
+.bg-pay {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-pax,
+.bg-pax {
+  background: linear-gradient(to bottom, #3cd796 0%, #0f754d 100%);
+}
+.icon-omg,
+.bg-omg {
+  background: linear-gradient(to bottom, #00a4ff 0%, #1a53f0 100%);
+}
+.icon-nmr,
+.bg-nmr {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-nexo,
+.bg-nexo {
+  background: linear-gradient(to bottom, #60befe 0%, #2853c3 100%);
+}
+.icon-mln,
+.bg-mln {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-mkr,
+.bg-mkr {
+  background: linear-gradient(to bottom, #1abc9c 0%, #546979 100%);
+}
+.icon-mco,
+.bg-mco {
+  background: linear-gradient(to bottom, #61a7e2 0%, #103f68 100%);
+}
+.icon-mana,
+.bg-mana {
+  background: linear-gradient(to bottom, #ec9250 0%, #35312e 100%);
+}
+.icon-lun,
+.bg-lun {
+  background: linear-gradient(to bottom, #f85f7d 0%, #f14e10 100%);
+}
+.icon-ltc,
+.bg-ltc {
+  background: linear-gradient(to bottom, #888 0%, #848484 100%);
+}
+.icon-link,
+.bg-link {
+  background: linear-gradient(to bottom, #41d4fc 0%, #3fa0f1 100%);
+}
+.icon-knc,
+.bg-knc {
+  background: linear-gradient(to bottom, #6ebb9d 0%, #3297ae 100%);
+}
+.icon-hmq,
+.bg-hmq {
+  background: linear-gradient(to bottom, #9cc1ef 0%, #58a1fc 100%);
+}
+.icon-gusd,
+.bg-gusd {
+  background: linear-gradient(to bottom, #26ddf9 0%, #0490a6 100%);
+}
+.icon-gup,
+.bg-gup {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-gnt,
+.bg-gnt {
+  background: linear-gradient(to bottom, #01d3e0 0%, #114cc0 100%);
+}
+.icon-gno,
+.bg-gno {
+  background: linear-gradient(to bottom, #42d4ee 0%, #00a6c4 100%);
+}
+.icon-fun,
+.bg-fun {
+  background: linear-gradient(to bottom, #ff6c88 0%, #f1385b 100%);
+}
+.icon-eth,
+.bg-eth {
+  background: linear-gradient(to bottom, #00a5f1 0%, #627eea 100%);
+}
+.icon-enj,
+.bg-enj {
+  background: linear-gradient(to bottom, #da58dc 0%, #6d84d6 100%);
+}
+.icon-elf,
+.bg-elf {
+  background: linear-gradient(to bottom, #01d3e0 0%, #2b5eba 100%);
+}
+.icon-edg,
+.bg-edg {
+  background: linear-gradient(to bottom, #bd83ff 0%, #682bac 100%);
+}
+.icon-doge,
+.bg-doge {
+  background: linear-gradient(to bottom, #e0cd81 0%, #bb9f32 100%);
+}
+.icon-dnt,
+.bg-dnt {
+  background: linear-gradient(to bottom, #4ee0ea 0%, #4358d3 100%);
+}
+.icon-dgd,
+.bg-dgd {
+  background: linear-gradient(to bottom, #fde785 0%, #f4d029 100%);
+}
+.icon-dgb,
+.bg-dgb {
+  background: linear-gradient(to bottom, #8fd4ff 0%, #003cff 100%);
+}
+.icon-dent,
+.bg-dent {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-dcn,
+.bg-dcn {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-dash,
+.bg-dash {
+  background: linear-gradient(to bottom, #6ac1ff 0%, #2677ba 100%);
+}
+.icon-dai,
+.bg-dai {
+  background: linear-gradient(to bottom, #ffd343 0%, #ffb300 100%);
+}
+.icon-cvc,
+.bg-cvc {
+  background: linear-gradient(to bottom, #72e776 0%, #3ab03e 100%);
+}
+.icon-btg,
+.bg-btg {
+  background: linear-gradient(to bottom, #ffe231 0%, #ee8707 100%);
+}
+.icon-btc,
+.bg-btc {
+  background: linear-gradient(to bottom, #ffa639 0%, #f76a1a 100%);
+}
+.icon-ir,
+.bg-ir {
+  background: linear-gradient(to bottom, #545454 0%, #000000 100%);
+  background-clip: inherit !important;
+  -webkit-background-clip: inherit !important;
+  border-radius: 50%;
+  -webkit-text-fill-color: #fff !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.icon-bsv,
+.bg-bsv {
+  background: linear-gradient(to bottom, #ffd84b 0%, #8a7407 100%);
+}
+.icon-bch,
+.bg-bch {
+  background: linear-gradient(to bottom, #ffb862 0%, #f76a1a 100%);
+}
+.icon-brd,
+.bg-brd {
+  background: linear-gradient(to bottom, #ffb178 0%, #f85b3f 100%);
+}
+.icon-bnt,
+.bg-bnt {
+  background: linear-gradient(to bottom, #000 0%, #000 100%);
+}
+.icon-bnb,
+.bg-bnb {
+  background: linear-gradient(to bottom, #f8d175 0%, #f4c148 100%);
+}
+.icon-bkx,
+.bg-bkx {
+  background: linear-gradient(to bottom, #fff 0%, #0da9fe 100%);
+}
+.icon-bat,
+.bg-bat {
+  background: linear-gradient(to bottom, #ec8150 0%, #ff5000 100%);
+}
+.icon-awc,
+.bg-awc {
+  background: linear-gradient(to bottom, #42c1fd 0%, #1f8efa 100%);
+}
+.icon-arn,
+.bg-arn {
+  background: linear-gradient(to bottom, #01d3e0 0%, #106ea5 100%);
+}
+.icon-ant,
+.bg-ant {
+  background: linear-gradient(to bottom, #bbecf0 0%, #2cd3e1 100%);
+}
+.icon-ae,
+.bg-ae {
+  background: linear-gradient(to bottom, #ff5785 0%, #de3f6b 100%);
+}
+.icon-adx,
+.bg-adx {
+  background: linear-gradient(to bottom, #4fa6eb 0%, #1b75bc 100%);
+}
+.icon-eurs,
+.bg-eurs {
+  background: linear-gradient(to bottom, #57beff 0%, #2468e3 100%);
+}
+.icon-mith,
+.bg-mith {
+  background: linear-gradient(to bottom, #57beff 0%, #2468e3 100%);
+}
+.icon-pma,
+.bg-pma {
+  background: linear-gradient(to bottom, #58a9ff 0%, #2b85e3 100%);
+}
+.icon-300,
+.bg-300 {
+  background: linear-gradient(to bottom, #e4c079 0%, #9c6114 100%);
+}
+.icon-abyss,
+.bg-abyss {
+  background: linear-gradient(to bottom, #2f8dfa 0%, #0047bc 100%);
+}
+.icon-ada,
+.bg-ada {
+  background: linear-gradient(to bottom, #388cff 0%, #096df3 100%);
+}
+.icon-adst,
+.bg-adst {
+  background: linear-gradient(to bottom, #7ee6fe 0%, #2c4df4 100%);
+}
+.icon-adt,
+.bg-adt {
+  background: linear-gradient(to bottom, #51b5f8 0%, #8d24dc 100%);
+}
+.icon-aidoc,
+.bg-aidoc {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-aion,
+.bg-aion {
+  background: linear-gradient(to bottom, #b7f1ff 0%, #00bfec 100%);
+}
+.icon-air,
+.bg-air {
+  background: linear-gradient(to bottom, #00a7db 0%, #7268ff 100%);
+}
+.icon-alis,
+.bg-alis {
+  background: linear-gradient(to bottom, #8c9af3 0%, #4d5cbe 100%);
+}
+.icon-amb,
+.bg-amb {
+  background: linear-gradient(to bottom, #22b5ff 0%, #721ff3 100%);
+}
+.icon-amis,
+.bg-amis {
+  background: linear-gradient(to bottom, #c08486 0%, #894a4c 100%);
+}
+.icon-appc,
+.bg-appc {
+  background: linear-gradient(to bottom, #fd9055 0%, #ff6b7a 100%);
+}
+.icon-vidt,
+.bg-vidt {
+  background: linear-gradient(to bottom, #3dbfcd 0%, #00d5ec 100%);
+}
+.icon-arc,
+.bg-arc {
+  background: linear-gradient(to bottom, #61f4d7 0%, #00b19d 100%);
+}
+.icon-art,
+.bg-art {
+  background: linear-gradient(to bottom, #e4c079 0%, #bd974c 100%);
+}
+.icon-ast,
+.bg-ast {
+  background: linear-gradient(to bottom, #00a4ff 0%, #5e72eb 100%);
+}
+.icon-ath,
+.bg-ath {
+  background: linear-gradient(to bottom, #61b3fa 0%, #5492cc 100%);
+}
+.icon-atl,
+.bg-atl {
+  background: linear-gradient(to bottom, #61b3fa 0%, #2280c3 100%);
+}
+.icon-atm,
+.bg-atm {
+  background: linear-gradient(to bottom, #3d87ff 0%, #e3372d 100%);
+}
+.icon-ava,
+.bg-ava {
+  background: linear-gradient(to bottom, #71e2e6 0%, #6198f3 100%);
+}
+.icon-avt,
+.bg-avt {
+  background: linear-gradient(to bottom, #34a5ff 0%, #4818f6 100%);
+}
+.icon-awr,
+.bg-awr {
+  background: linear-gradient(to bottom, #fee250 0%, #f70 100%);
+}
+.icon-bcap,
+.bg-bcap {
+  background: linear-gradient(to bottom, #6fd1f2 0%, #36beeb 100%);
+}
+.icon-bcd,
+.bg-bcd {
+  background: linear-gradient(to bottom, #ff7c0b 0%, #ff8944 100%);
+}
+.icon-bcpt,
+.bg-bcpt {
+  background: linear-gradient(to bottom, #f5d780 0%, #ff7511 100%);
+}
+.icon-bet,
+.bg-bet {
+  background: linear-gradient(to bottom, #ee9828 0%, #ec8150 100%);
+}
+.icon-bix,
+.bg-bix {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-blx,
+.bg-blx {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-blz,
+.bg-blz {
+  background: linear-gradient(to bottom, #ec9250 0%, #18578c 100%);
+}
+.icon-bmc,
+.bg-bmc {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-bmt,
+.bg-bmt {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-bnc,
+.bg-bnc {
+  background: linear-gradient(to bottom, #f7b658 0%, #2282aa 100%);
+}
+.icon-bop,
+.bg-bop {
+  background: linear-gradient(to bottom, #fde785 0%, #ffdc59 100%);
+}
+.icon-bot,
+.bg-bot {
+  background: linear-gradient(to bottom, #00f0ff 0%, #1400ff 100%);
+}
+.icon-bq,
+.bg-bq {
+  background: linear-gradient(to bottom, #41d4fc 0%, #2e9ccb 100%);
+}
+.icon-bqx,
+.bg-bqx {
+  background: linear-gradient(to bottom, #70d463 0%, #2aa000 100%);
+}
+.icon-brat,
+.bg-brat {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-btcny,
+.bg-btcny {
+  background: linear-gradient(to bottom, #6fd1f2 0%, #36beeb 100%);
+}
+.icon-bte,
+.bg-bte {
+  background: linear-gradient(to bottom, #ffb900 0%, #d70c3a 100%);
+}
+.icon-btm,
+.bg-btm {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-c20,
+.bg-c20 {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-cag,
+.bg-cag {
+  background: linear-gradient(to bottom, #16e0da 0%, #0d9fd3 100%);
+}
+.icon-cat,
+.bg-cat {
+  background: linear-gradient(to bottom, #fef967 0%, #fc8e00 100%);
+}
+.icon-ccc,
+.bg-ccc {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-cdt,
+.bg-cdt {
+  background: linear-gradient(to bottom, #5bd1f1 0%, #41c2fc 100%);
+}
+.icon-cfi,
+.bg-cfi {
+  background: linear-gradient(to bottom, #5bd1f1 0%, #41c2fc 100%);
+}
+.icon-cfun,
+.bg-cfun {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-cmc,
+.bg-cmc {
+  background: linear-gradient(to bottom, #fef967 0%, #fc8e00 100%);
+}
+.icon-cmt,
+.bg-cmt {
+  background: linear-gradient(to bottom, #dabc66 0%, #9a7131 100%);
+}
+.icon-cnd,
+.bg-cnd {
+  background: linear-gradient(to bottom, #5bd1f1 0%, #41c2fc 100%);
+}
+.icon-cob,
+.bg-cob {
+  background: linear-gradient(to bottom, #71d9c2 0%, #13bf99 100%);
+}
+.icon-crb,
+.bg-crb {
+  background: linear-gradient(to bottom, #90baea 0%, #2c3e53 100%);
+}
+.icon-credo,
+.bg-credo {
+  background: linear-gradient(to bottom, #61a7e2 0%, #4189c6 100%);
+}
+.icon-cs,
+.bg-cs {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-csno,
+.bg-csno {
+  background: linear-gradient(to bottom, #7fdef8 0%, #41d4fc 100%);
+}
+.icon-ctl,
+.bg-ctl {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-ctr,
+.bg-ctr {
+  background: linear-gradient(to bottom, #f8d175 0%, #ffc029 100%);
+}
+.icon-dab,
+.bg-dab {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-dalc,
+.bg-dalc {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-dao,
+.bg-dao {
+  background: linear-gradient(to bottom, #ed5250 0%, #f82636 100%);
+}
+.icon-data,
+.bg-data {
+  background: linear-gradient(to bottom, #f12348 0%, #302d95 100%);
+}
+.icon-dcr,
+.bg-dcr {
+  background: linear-gradient(to bottom, #2ed6a1 0%, #5bc7af 100%);
+}
+.icon-ddf,
+.bg-ddf {
+  background: linear-gradient(to bottom, #efa900 0%, #394552 100%);
+}
+.icon-dgx-10,
+.bg-dgx-10 {
+  background: linear-gradient(to bottom, #fde785 0%, #f4d029 100%);
+}
+.icon-dice,
+.bg-dice {
+  background: linear-gradient(to bottom, #70ce49 0%, #408fb2 100%);
+}
+.icon-dlt,
+.bg-dlt {
+  background: linear-gradient(to bottom, #efa893 0%, #753db2 100%);
+}
+.icon-dna,
+.bg-dna {
+  background: linear-gradient(to bottom, #23cffe 0%, #0686bd 100%);
+}
+.icon-dpp,
+.bg-dpp {
+  background: linear-gradient(to bottom, #f1ff91 0%, #b9cc32 100%);
+}
+.icon-dpy,
+.bg-dpy {
+  background: linear-gradient(to bottom, #4d79ee 0%, #304ea5 100%);
+}
+.icon-drgn,
+.bg-drgn {
+  background: linear-gradient(to bottom, #fa6666 0%, #c91111 100%);
+}
+.icon-drop,
+.bg-drop {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-drp,
+.bg-drp {
+  background: linear-gradient(to bottom, #56a6dd 0%, #5d2a74 100%);
+}
+.icon-drt,
+.bg-drt {
+  background: linear-gradient(to bottom, #e75b39 0%, #e95290 100%);
+}
+.icon-dta,
+.bg-dta {
+  background: linear-gradient(to bottom, #70d463 0%, #2470d4 100%);
+}
+.icon-ecn,
+.bg-ecn {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-edo,
+.bg-edo {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-eht,
+.bg-eht {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-ekt,
+.bg-ekt {
+  background: linear-gradient(to bottom, #00c0f9 0%, #37c862 100%);
+}
+.icon-elix,
+.bg-elix {
+  background: linear-gradient(to bottom, #00aded 0%, #295ba7 100%);
+}
+.icon-emv,
+.bg-emv {
+  background: linear-gradient(to bottom, #f7e696 0%, #f4f129 100%);
+}
+.icon-eng,
+.bg-eng {
+  background: linear-gradient(to bottom, #61f4d7 0%, #1abc9c 100%);
+}
+.icon-ent,
+.bg-ent {
+  background: linear-gradient(to bottom, #ff00ef 0%, #50f 100%);
+}
+.icon-eos,
+.bg-eos {
+  background: linear-gradient(to bottom, #65ccfb 0%, #f5823e 100%);
+}
+.icon-etbs,
+.bg-etbs {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-etc,
+.bg-etc {
+  background: linear-gradient(to bottom, #00ff4e 0%, #066515 100%);
+}
+.icon-ark,
+.bg-ark {
+  background: linear-gradient(to bottom, #e8574b 0%, #c72c31 100%);
+}
+.icon-iqn,
+.bg-iqn {
+  background: linear-gradient(to bottom, #2af9c8 0%, #1a98fb 100%);
+}
+.icon-ethos,
+.bg-ethos {
+  background: linear-gradient(to bottom, #0fb 0%, #00cfab 100%);
+}
+.icon-eurt,
+.bg-eurt {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-evx,
+.bg-evx {
+  background: linear-gradient(to bottom, #80bbff 0%, #004da7 100%);
+}
+.icon-fam,
+.bg-fam {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-frd,
+.bg-frd {
+  background: linear-gradient(to bottom, #dc3045 0%, #a01a33 100%);
+}
+.icon-ftc,
+.bg-ftc {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-fuel,
+.bg-fuel {
+  background: linear-gradient(to bottom, #b8c9d8 0%, #075396 100%);
+}
+.icon-fyn,
+.bg-fyn {
+  background: linear-gradient(to bottom, #fba000 0%, #da5919 100%);
+}
+.icon-gbt,
+.bg-gbt {
+  background: linear-gradient(to bottom, #dc3045 0%, #5a1414 100%);
+}
+.icon-geld,
+.bg-geld {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-gifto,
+.bg-gifto {
+  background: linear-gradient(to bottom, #fc51ff 0%, #7f27ff 100%);
+}
+.icon-gnx,
+.bg-gnx {
+  background: linear-gradient(to bottom, #f8dc19 0%, #4100fb 100%);
+}
+.icon-grid,
+.bg-grid {
+  background: linear-gradient(to bottom, #27c9ff 0%, #6cbdd8 100%);
+}
+.icon-gtc,
+.bg-gtc {
+  background: linear-gradient(to bottom, #56fbdb 0%, #ff8340 100%);
+}
+.icon-gtkt,
+.bg-gtkt {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-gvt,
+.bg-gvt {
+  background: linear-gradient(to bottom, #5bc7af 0%, #00beb0 100%);
+}
+.icon-h2o,
+.bg-h2o {
+  background: linear-gradient(to bottom, #6cbdd8 0%, #0199dd 100%);
+}
+.icon-hgt,
+.bg-hgt {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-hkg,
+.bg-hkg {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-hlc,
+.bg-hlc {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-hot,
+.bg-hot {
+  background: linear-gradient(to bottom, #00edff 0%, #00838d 100%);
+}
+.icon-hpb,
+.bg-hpb {
+  background: linear-gradient(to bottom, #31f1fc 0%, #0579bf 100%);
+}
+.icon-hst,
+.bg-hst {
+  background: linear-gradient(to bottom, #81a5fd 0%, #1254ce 100%);
+}
+.icon-hvn,
+.bg-hvn {
+  background: linear-gradient(to bottom, #4db7e4 0%, #1887b1 100%);
+}
+.icon-ice,
+.bg-ice {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-icn,
+.bg-icn {
+  background: linear-gradient(to bottom, #84b1c4 0%, #4c6f8c 100%);
+}
+.icon-icos,
+.bg-icos {
+  background: linear-gradient(to bottom, #50e3c2 0%, #23c8c6 100%);
+}
+.icon-icx,
+.bg-icx {
+  background: linear-gradient(to bottom, #8beeca 0%, #1fc5c9 100%);
+}
+.icon-idea,
+.bg-idea {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-ift,
+.bg-ift {
+  background: linear-gradient(to bottom, #02e1c9 0%, #01a5f1 100%);
+}
+.icon-ikb,
+.bg-ikb {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-imt,
+.bg-imt {
+  background: linear-gradient(to bottom, #00a97c 0%, #08c 100%);
+}
+.icon-ind,
+.bg-ind {
+  background: linear-gradient(to bottom, #30d2ff 0%, #8678ff 100%);
+}
+.icon-ink,
+.bg-ink {
+  background: linear-gradient(to bottom, #ff008a 0%, #df1616 100%);
+}
+.icon-ins,
+.bg-ins {
+  background: linear-gradient(to bottom, #b2a3f6 0%, #fc4c06 100%);
+}
+.icon-iost,
+.bg-iost {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-iota,
+.bg-iota {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-itc,
+.bg-itc {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-itt,
+.bg-itt {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-ixt,
+.bg-ixt {
+  background: linear-gradient(to bottom, #26c7dc 0%, #0e5888 100%);
+}
+.icon-jet,
+.bg-jet {
+  background: linear-gradient(to bottom, #e4c079 0%, #9c6114 100%);
+}
+.icon-jnt,
+.bg-jnt {
+  background: linear-gradient(to bottom, #00a4ff 0%, #0050db 100%);
+}
+.icon-kick,
+.bg-kick {
+  background: linear-gradient(to bottom, #23bbe3 0%, #5e4598 100%);
+}
+.icon-la,
+.bg-la {
+  background: linear-gradient(to bottom, #6bd9ea 0%, #0096ac 100%);
+}
+.icon-latx,
+.bg-latx {
+  background: linear-gradient(to bottom, #6cf000 0%, #70d463 100%);
+}
+.icon-lev,
+.bg-lev {
+  background: linear-gradient(to bottom, #ffcd05 0%, #fc7500 100%);
+}
+.icon-life,
+.bg-life {
+  background: linear-gradient(to bottom, #5bc7af 0%, #16bc9c 100%);
+}
+.icon-link2,
+.bg-link2 {
+  background: linear-gradient(to bottom, #41d4fc 0%, #3fa0f1 100%);
+}
+.icon-lnc,
+.bg-lnc {
+  background: linear-gradient(to bottom, #41d4fc 0%, #3fa0f1 100%);
+}
+.icon-lok,
+.bg-lok {
+  background: linear-gradient(to bottom, #6cf000 0%, #108329 100%);
+}
+.icon-lpg,
+.bg-lpg {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-lrc,
+.bg-lrc {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-lstr,
+.bg-lstr {
+  background: linear-gradient(to bottom, #d600ff 0%, #7300ff 100%);
+}
+.icon-ltc,
+.bg-ltc {
+  background: linear-gradient(to bottom, #888 0%, #848484 100%);
+}
+.icon-luck,
+.bg-luck {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-mbrs,
+.bg-mbrs {
+  background: linear-gradient(to bottom, #dc3045 0%, #ca0000 100%);
+}
+.icon-mcap,
+.bg-mcap {
+  background: linear-gradient(to bottom, #5bc7af 0%, #033b4a 100%);
+}
+.icon-mci,
+.bg-mci {
+  background: linear-gradient(to bottom, #41d4fc 0%, #1db1ed 100%);
+}
+.icon-mda,
+.bg-mda {
+  background: linear-gradient(to bottom, #70d463 0%, #01a64f 100%);
+}
+.icon-mds,
+.bg-mds {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-mee,
+.bg-mee {
+  background: linear-gradient(to bottom, #eb2d84 0%, #7300ff 100%);
+}
+.icon-mgo,
+.bg-mgo {
+  background: linear-gradient(to bottom, #fd3b38 0%, #2dd9ff 100%);
+}
+.icon-mit,
+.bg-mit {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-mne,
+.bg-mne {
+  background: linear-gradient(to bottom, #00c8dc 0%, #087bdc 100%);
+}
+.icon-mod,
+.bg-mod {
+  background: linear-gradient(to bottom, #49c0f3 0%, #0057ff 100%);
+}
+.icon-mof,
+.bg-mof {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-mrv,
+.bg-mrv {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-msp,
+.bg-msp {
+  background: linear-gradient(to bottom, #e85d53 0%, #2f0735 100%);
+}
+.icon-mth,
+.bg-mth {
+  background: linear-gradient(to bottom, #16ed8c 0%, #0767fc 100%);
+}
+.icon-mtl,
+.bg-mtl {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-mtn,
+.bg-mtn {
+  background: linear-gradient(to bottom, #41d4fc 0%, #209fcf 100%);
+}
+.icon-mtr,
+.bg-mtr {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-mtx,
+.bg-mtx {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-myb,
+.bg-myb {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-myd,
+.bg-myd {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-myst,
+.bg-myst {
+  background: linear-gradient(to bottom, #f91067 0%, #2c1398 100%);
+}
+.icon-nas,
+.bg-nas {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-neo,
+.bg-neo {
+  background: linear-gradient(to bottom, #aee91c 0%, #54bf02 100%);
+}
+.icon-net,
+.bg-net {
+  background: linear-gradient(to bottom, #e4c079 0%, #d7b62c 100%);
+}
+.icon-nimfa,
+.bg-nimfa {
+  background: linear-gradient(to bottom, #00e8c5 0%, #00bbd3 100%);
+}
+.icon-now,
+.bg-now {
+  background: linear-gradient(to bottom, #3bee81 0%, #00ad44 100%);
+}
+.icon-npxs,
+.bg-npxs {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-nuls,
+.bg-nuls {
+  background: linear-gradient(to bottom, #b0fe4f 0%, #7dc326 100%);
+}
+.icon-nxc,
+.bg-nxc {
+  background: linear-gradient(to bottom, #e4c079 0%, #9c6114 100%);
+}
+.icon-nxx,
+.bg-nxx {
+  background: linear-gradient(to bottom, #70d463 0%, #8dc63f 100%);
+}
+.icon-oax,
+.bg-oax {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-oc,
+.bg-oc {
+  background: linear-gradient(to bottom, #4399ff 0%, #002ccf 100%);
+}
+.icon-ocn,
+.bg-ocn {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-ohni,
+.bg-ohni {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-opt,
+.bg-opt {
+  background: linear-gradient(to bottom, #e54f7d 0%, #451f86 100%);
+}
+.icon-ost,
+.bg-ost {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-pix,
+.bg-pix {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-play,
+.bg-play {
+  background: linear-gradient(to bottom, #65e0ef 0%, #38abd7 100%);
+}
+.icon-plbt,
+.bg-plbt {
+  background: linear-gradient(to bottom, #069dd8 0%, #1f7995 100%);
+}
+.icon-plr,
+.bg-plr {
+  background: linear-gradient(to bottom, #41d4fc 0%, #00bfff 100%);
+}
+.icon-plu,
+.bg-plu {
+  background: linear-gradient(to bottom, #f8d175 0%, #d1ae52 100%);
+}
+.icon-ply,
+.bg-ply {
+  background: linear-gradient(to bottom, #ffaa02 0%, #2a6cff 100%);
+}
+.icon-poe,
+.bg-poe {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-pos,
+.bg-pos {
+  background: linear-gradient(to bottom, #8beeca 0%, #00cf87 100%);
+}
+.icon-pro,
+.bg-pro {
+  background: linear-gradient(to bottom, #2cace2 0%, #00c8dc 100%);
+}
+.icon-prs,
+.bg-prs {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-prsp,
+.bg-prsp {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-pt,
+.bg-pt {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-put,
+.bg-put {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-qash,
+.bg-qash {
+  background: linear-gradient(to bottom, #43bbff 0%, #0047ff 100%);
+}
+.icon-qau,
+.bg-qau {
+  background: linear-gradient(to bottom, #e4c079 0%, #c09c68 100%);
+}
+.icon-qbt,
+.bg-qbt {
+  background: linear-gradient(to bottom, #00ff91 0%, #7000ff 100%);
+}
+.icon-qrl,
+.bg-qrl {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-qsp,
+.bg-qsp {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-qun,
+.bg-qun {
+  background: linear-gradient(to bottom, #61b3fa 0%, #0562cd 100%);
+}
+.icon-rdn,
+.bg-rdn {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-req,
+.bg-req {
+  background: linear-gradient(to bottom, #6cfccd 0%, #2ed6a1 100%);
+}
+.icon-rex,
+.bg-rex {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-rlt,
+.bg-rlt {
+  background: linear-gradient(to bottom, #fee233 0%, #f6a027 100%);
+}
+.icon-rlx,
+.bg-rlx {
+  background: linear-gradient(to bottom, #fde785 0%, #db0029 100%);
+}
+.icon-round,
+.bg-round {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-ruff,
+.bg-ruff {
+  background: linear-gradient(to bottom, #7aedd6 0%, #20c7c9 100%);
+}
+.icon-rvt,
+.bg-rvt {
+  background: linear-gradient(to bottom, #efb823 0%, #ff6f00 100%);
+}
+.icon-san,
+.bg-san {
+  background: linear-gradient(to bottom, #61b3fa 0%, #2b77b3 100%);
+}
+.icon-scl,
+.bg-scl {
+  background: linear-gradient(to bottom, #61b3fa 0%, #2b77b3 100%);
+}
+.icon-sense,
+.bg-sense {
+  background: linear-gradient(to bottom, #34cbfd 0%, #b333fa 100%);
+}
+.icon-sgel,
+.bg-sgel {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-sgt,
+.bg-sgt {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-shit,
+.bg-shit {
+  background: linear-gradient(to bottom, #d7a938 0%, #ba7b50 100%);
+}
+.icon-sift,
+.bg-sift {
+  background: linear-gradient(to bottom, #61b3fa 0%, #4887f4 100%);
+}
+.icon-smart,
+.bg-smart {
+  background: linear-gradient(to bottom, #fef1be 0%, #f6cf42 100%);
+}
+.icon-smt,
+.bg-smt {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-snc,
+.bg-snc {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-snd,
+.bg-snd {
+  background: linear-gradient(to bottom, #e4c079 0%, #9c6114 100%);
+}
+.icon-sngls,
+.bg-sngls {
+  background: linear-gradient(to bottom, #ed5250 0%, #aa0e20 100%);
+}
+.icon-snt,
+.bg-snt {
+  background: linear-gradient(to bottom, #61b3fa 0%, #5b6dee 100%);
+}
+.icon-sparta,
+.bg-sparta {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-spc,
+.bg-spc {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-sphtx,
+.bg-sphtx {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-srn,
+.bg-srn {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-stk,
+.bg-stk {
+  background: linear-gradient(to bottom, #d82553 0%, #ad3873 100%);
+}
+.icon-storm,
+.bg-storm {
+  background: linear-gradient(to bottom, #fffa8c 0%, #ff9f00 100%);
+}
+.icon-strc,
+.bg-strc {
+  background: linear-gradient(to bottom, #6cfccd 0%, #2ed6a1 100%);
+}
+.icon-sub,
+.bg-sub {
+  background: linear-gradient(to bottom, #ed5250 0%, #e53431 100%);
+}
+.icon-sxut,
+.bg-sxut {
+  background: linear-gradient(to bottom, #ffa900 0%, #427cff 100%);
+}
+.icon-syn,
+.bg-syn {
+  background: linear-gradient(to bottom, #ec1f8e 0%, #d82553 100%);
+}
+.icon-tbt,
+.bg-tbt {
+  background: linear-gradient(to bottom, #61b3fa 0%, #2683ff 100%);
+}
+.icon-tfl,
+.bg-tfl {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-theta,
+.bg-theta {
+  background: linear-gradient(to bottom, #2ee4be 0%, #2ab8e6 100%);
+}
+.icon-time,
+.bg-time {
+  background: linear-gradient(to bottom, #f0a44f 0%, #44a1db 100%);
+}
+.icon-tip,
+.bg-tip {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-tix,
+.bg-tix {
+  background: linear-gradient(to bottom, #ed5250 0%, #d92a2e 100%);
+}
+.icon-tkn,
+.bg-tkn {
+  background: linear-gradient(to bottom, #8beeca 0%, #24dd7b 100%);
+}
+.icon-tme,
+.bg-tme {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-tnb,
+.bg-tnb {
+  background: linear-gradient(to bottom, #fde785 0%, #ffd800 100%);
+}
+.icon-tnt,
+.bg-tnt {
+  background: linear-gradient(to bottom, #ff6c88 0%, #f1385b 100%);
+}
+.icon-tpay,
+.bg-tpay {
+  background: linear-gradient(to bottom, #80bcff 0%, #0006ff 100%);
+}
+.icon-tsl,
+.bg-tsl {
+  background: linear-gradient(to bottom, #65e430 0%, #067e73 100%);
+}
+.icon-ukg,
+.bg-ukg {
+  background: linear-gradient(to bottom, #f9e84d 0%, #dab700 100%);
+}
+.icon-usdt,
+.bg-usdt {
+  background: linear-gradient(to bottom, #2dca91 0%, #26a17b 100%);
+}
+.icon-vet,
+.bg-vet {
+  background: linear-gradient(to bottom, #41d4fc 0%, #15bdff 100%);
+}
+.icon-veri,
+.bg-veri {
+  background: linear-gradient(to bottom, #fba000 0%, #f93 100%);
+}
+.icon-vibe,
+.bg-vibe {
+  background: linear-gradient(to bottom, #61b3fa 0%, #338be5 100%);
+}
+.icon-vibex,
+.bg-vibex {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-viu,
+.bg-viu {
+  background: linear-gradient(to bottom, #61b3fa 0%, #338be5 100%);
+}
+.icon-vrs,
+.bg-vrs {
+  background: linear-gradient(to bottom, #5bfcef 0%, #0066e5 100%);
+}
+.icon-vsl,
+.bg-vsl {
+  background: linear-gradient(to bottom, #61b3fa 0%, #0b549b 100%);
+}
+.icon-vsm,
+.bg-vsm {
+  background: linear-gradient(to bottom, #6cfccd 0%, #7aedd6 100%);
+}
+.icon-wbc,
+.bg-wbc {
+  background: linear-gradient(to bottom, #f68361 0%, #f14e10 100%);
+}
+.icon-wct,
+.bg-wct {
+  background: linear-gradient(to bottom, #61b3fa 0%, #105bfb 100%);
+}
+.icon-wic,
+.bg-wic {
+  background: linear-gradient(to bottom, #efb823 0%, #ff6f00 100%);
+}
+.icon-wpr,
+.bg-wpr {
+  background: linear-gradient(to bottom, #fff986 0%, #fff500 100%);
+}
+.icon-wtc,
+.bg-wtc {
+  background: linear-gradient(to bottom, #00ffdb 0%, #8300ff 100%);
+}
+.icon-xaur,
+.bg-xaur {
+  background: linear-gradient(to bottom, #e4c079 0%, #886c3c 100%);
+}
+.icon-xid,
+.bg-xid {
+  background: linear-gradient(to bottom, #61b3fa 0%, #000082 100%);
+}
+.icon-xnn,
+.bg-xnn {
+  background: linear-gradient(to bottom, #41d4fc 0%, #1dafec 100%);
+}
+.icon-xrl,
+.bg-xrl {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-yupie,
+.bg-yupie {
+  background: linear-gradient(to bottom, #ed5250 0%, #fc3e45 100%);
+}
+.icon-zst,
+.bg-zst {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-gas,
+.bg-gas {
+  background: linear-gradient(to bottom, #5ae875 0%, #c8ffbb 100%);
+}
+.icon-btt,
+.bg-btt {
+  background: linear-gradient(to bottom, #e806af 0%, #a800ff 100%);
+}
+.icon-xlm,
+.bg-xlm {
+  background: linear-gradient(to bottom, #828282 0%, #000 100%);
+}
+.icon-kin,
+.bg-kin {
+  background: linear-gradient(to bottom, #c05aff 0%, #7a00e7 100%);
+}
+.icon-grs,
+.bg-grs {
+  background: linear-gradient(to bottom, #06ffeb 0%, #00ada3 100%);
+}
+.icon-fet,
+.bg-fet {
+  background: linear-gradient(to bottom, #fff 0%, #8785ff 100%);
+}
+.icon-lsk,
+.bg-lsk {
+  background: linear-gradient(to bottom, #084591 0%, #8785ff 100%);
+}
+.icon-nem,
+.icon-xem,
+.bg-xem,
+.bg-nem {
+  background: linear-gradient(to bottom, #ffad00 0%, #00d5c3 100%);
+}
+.icon-uni {
+  background: linear-gradient(to bottom, #fe669c 0%, #da0067 100%);
+}
+.icon-ftt {
+  background: linear-gradient(to bottom, #57d0e8 0%, #0ba7c4 100%);
+}
+.icon-comp {
+  background: linear-gradient(to bottom, #15eeac 0%, #17ab7e 100%);
+}
+.icon-snx {
+  background: linear-gradient(to bottom, #00f0ff 0%, #2518be 100%);
+}
+.icon-matic {
+  background: linear-gradient(to bottom, #2bbdf7 0%, #2b6def 100%);
+}
+.icon-rune {
+  background: linear-gradient(to bottom, #386ff9 0%, #003edb 100%);
+}
+.icon-enj {
+  background: linear-gradient(to bottom, #8978e1 0%, #6c5bc5 100%);
+}
+.icon-leo {
+  background: linear-gradient(to bottom, #fedf00 0%, #ff6b00 100%);
+}
+.icon-ren {
+  background: linear-gradient(to bottom, #b0a9ff 0%, #735ef5 100%);
+}
+.icon-celr {
+  background: linear-gradient(to bottom, #fbf4ef 0%, #f7eae1 100%);
+}
+.icon-job {
+  background: linear-gradient(to bottom, #c18429 0%, #f5eddd 100%);
+}
+.icon-shr {
+  background: linear-gradient(to bottom, #1f8fbf 0%, #1868b4 100%);
+}
+.icon-ctsi {
+  background: linear-gradient(to bottom, #b0b0b0 0%, #5a5a5a 100%);
+}
+.icon-cos {
+  background: linear-gradient(to bottom, #11c0fe 0%, #2e67f6 100%);
+}
+.icon-dag {
+  background: linear-gradient(to bottom, #58a9ff 0%, #8b25a5 100%);
+}
+.icon-gto {
+  background: linear-gradient(to bottom, #fc51ff 0%, #7f27ff 100%);
+}
+.icon-soul {
+  background: linear-gradient(to bottom, #b1cdea 0%, #aebecf 100%);
+}
+.icon-rsr {
+  background: linear-gradient(to bottom, #a2a2a2 0%, #686868 100%);
+}
+.icon-hex {
+  background: linear-gradient(to bottom, #ff08e4 0%, #ffcb06 100%);
+}
+.icon-usds {
+  background: linear-gradient(to bottom, #5c90e8 0%, #1f56b2 100%);
+}
+.icon-ama {
+  background: linear-gradient(to bottom, #b3e837 0%, #7ea02f 100%);
+}
+.icon-rsv {
+  background: linear-gradient(to bottom, #a2a2a2 0%, #686868 100%);
+}
+.icon-hydro {
+  background: linear-gradient(to bottom, #1f8fbf 0%, #1868b4 100%);
+}
+.icon-cro {
+  background: linear-gradient(to bottom, #6b97ff 0%, #003ac6 100%);
+}
+.icon-waves,
+.bg-waves {
+  background: linear-gradient(to bottom, #6095ff 0%, #004de5 100%);
+}
+.icon-vtho,
+.bg-vtho {
+  background: linear-gradient(to bottom, #4bd7fd 0%, #0799d2 100%);
+}
+.icon-bnbTokenDefault,
+.bg-bnbTokenDefault {
+  background: linear-gradient(to bottom, #f8d175 0%, #f4c148 100%);
+}
+.icon-awc-986,
+.bg-awc-986 {
+  background: linear-gradient(to bottom, #f8d175 0%, #f4c148 100%);
+}
+.icon-ont,
+.bg-ont {
+  background: linear-gradient(to bottom, #58a9ff 0%, #2b85e3 100%);
+}
+.icon-ong,
+.bg-ong {
+  background: linear-gradient(to bottom, #58a9ff 0%, #2b85e3 100%);
+}
+.icon-atom,
+.bg-atom {
+  background: linear-gradient(to bottom, #c7c7c7 0%, #8785ff 100%);
+}
+.icon-sent,
+.bg-sent {
+  background: linear-gradient(to bottom, #129fed 0%, #004cde 100%);
+}
+.icon-raven-f66,
+.bg-raven-f66 {
+  background: linear-gradient(to bottom, #f8d175 0%, #f4c148 100%);
+}

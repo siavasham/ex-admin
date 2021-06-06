@@ -48,10 +48,12 @@ export function clone(arr) {
 
 export function toMoney(amount) {
   if (typeof amount == "undefined" || amount == "null") return "";
-  if (amount.length < 2) return amount + "";
-  return ("" + amount)
-    .replace(/,/g, "")
-    .replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+  let p = ("" + amount).split(".");
+  if (p[0] < 999) return amount + "";
+  return (
+    p[0].replace(/,/g, "").replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") +
+    (p[1] ? "." + p[1] : "")
+  );
 }
 export function toggle(collection, item) {
   let temp = clone(collection);
@@ -69,6 +71,9 @@ export function num(txt) {
   if (typeof txt == "string") ret = txt.replace(/[^\d\.]*/g, "");
   else ret = txt;
   return parseInt(ret);
+}
+export function isFloat(num) {
+  return typeof num === "number" && !Number.isInteger(num);
 }
 export function query(param) {
   let xquery = window.location.search.substring(1);

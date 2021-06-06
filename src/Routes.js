@@ -12,7 +12,9 @@ import Spinner from "component/spinner";
 
 const dashboard = lazy(() => import("route/dashboard/dashboard"));
 const users = lazy(() => import("route/users/users"));
+const coins = lazy(() => import("route/coins/coins"));
 const news = lazy(() => import("route/news/news"));
+const constans = lazy(() => import("route/setting/constans"));
 const addNews = lazy(() => import("route/news/add"));
 const editNews = lazy(() => import("route/news/edit"));
 
@@ -22,7 +24,9 @@ const route = {
   home: [
     { path: "/dashboard", component: dashboard },
     { path: "/users", component: users },
+    { path: "/coins", component: coins },
     { path: "/news", component: news },
+    { path: "/setting/constans", component: constans },
     { path: "/news/add", component: addNews },
     { path: "/news/edit", component: editNews },
   ],
