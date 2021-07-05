@@ -6,7 +6,7 @@ import en from "./en.js";
 i18n
   // .use(LanguageDetector)
   .init({
-    lng: "fa", // 'en' | 'es'
+    lng: "en", // 'en' | 'es'
     resources: {
       fa: {
         translations: fa,
@@ -15,7 +15,7 @@ i18n
         translations: en,
       },
     },
-    fallbackLng: "fa",
+    fallbackLng: "en",
     debug: false,
 
     // have a common namespace used around the full app

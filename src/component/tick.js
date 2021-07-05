@@ -1,14 +1,7 @@
 import React from "react";
 import { t } from "locales";
 
-export const TickData = {
-  yes: [t("no"), t("yes")],
-  status: [t("inActive"), t("active")],
-};
-export default function ({ value, type = "yes" }) {
-  return value == 1 ? (
-    <div className="badge badge-pill badge-success">{TickData[type][1]}</div>
-  ) : (
-    <div className="badge badge-pill badge-danger">{TickData[type][0]}</div>
-  );
+const type = ['danger','success','info','warning','primary','secondary',];
+export default function ({ value, data }) {
+  return <div className={"badge badge-pill badge-"+type[+value]}>{data[+value]}</div>
 }

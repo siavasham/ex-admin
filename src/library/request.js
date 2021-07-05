@@ -1,19 +1,30 @@
 import axios from "axios";
-import { setup } from "axios-cache-adapter";
+// import { setup } from "axios-cache-adapter";
 export const baseUrl =
   window.location.hostname === "localhost"
     ? "http://localhost:8000/"
-    : "https://stronghold.live/";
-const axiosBase = setup({
-  axios,
-  baseURL: baseUrl + "admin/",
+    : "https://localhost:8000/";
+
+// const axiosBase = setup({
+//   axios,
+//   baseURL: baseUrl + "api/manager/",
+//   timeout: 5000,
+//   validateStatus: function () {
+//     return true;
+//   },
+//   cache: {
+//     maxAge: 1000,
+//   },
+//   headers: {
+//     'Content-Type': 'application/x-www-form-urlencoded'
+//   }
+// });
+const axiosBase = axios.create({
+  baseURL: baseUrl + "api/manager/",
   timeout: 5000,
-  validateStatus: function () {
-    return true;
-  },
-  cache: {
-    maxAge: 1000,
-  },
+  headers: {
+    'Content-Type': 'application/x-www-form-urlencoded'
+  }
 });
 
 export const get = async (path, opt) => {
@@ -41,16 +52,14 @@ export const post = async (path, items, opt) => {
         maxAge: 10 * 60 * 1000,
       };
     }
-    let form = new FormData();
-    for (let key in items) {
-      form.append(key, items[key]);
-    }
-    const res = axiosBase.post(path, form, header);
+
+    const res = axiosBase.post(path, new URLSearchParams(items).toString(), header);
     const { data } = await res;
     if (data?.login) {
       window.postMessage({ login: true }, "*");
     }
     return data;
+    
   } catch (error) {
     window.postMessage({ notify: ["error", "try-later"] }, "*");
     return await 0;

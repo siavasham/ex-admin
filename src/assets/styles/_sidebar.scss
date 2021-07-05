@@ -226,7 +226,7 @@
             font-size: 0.75rem;
           }
           &.active {
-            color: $sidebar-light-menu-active-color;
+            color: $sidebar-light-menu-active-color!important;
             background: transparent;
           }
           &:hover {

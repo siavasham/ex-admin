@@ -27,6 +27,9 @@ const Sidebar = (props) => {
   useEffect(() => {
     onRouteChanged();
   }, [location]);
+  useEffect(() => {
+    toggleMenuState(location.pathname.split("/")?.[1] ?? '')
+  }, []);
 
   useEffect(() => {
     const body = document.querySelector("body");
@@ -46,17 +49,15 @@ const Sidebar = (props) => {
 
   const onRouteChanged = () => {
     document.querySelector("#sidebar").classList.remove("active");
-    Object.keys(state).forEach((i) => {
-      setState({ [i]: false });
-    });
 
-    const dropdownPaths = [{ path: "/apps", state: "appsMenuOpen" }];
 
-    dropdownPaths.forEach((obj) => {
-      if (isPathActive(obj.path)) {
-        setState({ [obj.state]: true });
-      }
-    });
+    // const dropdownPaths = [{ path: "/apps", state: "appsMenuOpen" }];
+
+    // dropdownPaths.forEach((obj) => {
+    //   if (isPathActive(obj.path)) {
+    //     setState({ [obj.state]: true });
+    //   }
+    // });
   };
   const isPathActive = (path) => {
     return location.pathname.startsWith(path);
@@ -75,6 +76,47 @@ const Sidebar = (props) => {
             <i className="mdi mdi-home-outline menu-icon"></i>
           </Link>
         </li>
+        <li
+          className={isPathActive("/coins") ? "nav-item active" : "nav-item"}
+        >
+          <div
+            className={state.coins ? "nav-link menu-expanded" : "nav-link"}
+            onClick={(e) => toggleMenuState("coins")}
+            data-toggle="collapse"
+          >
+            <span className="menu-title">{t("coins")}</span>
+            <i className="menu-arrow"></i>
+            <i className="mdi mdi-coin menu-icon"></i>
+          </div>
+          <Collapse in={state.coins}>
+            <ul className="nav flex-column sub-menu">
+              <li className="nav-item">
+                <Link
+                  className={ isPathActive("/coins/network") ? "nav-link active": "nav-link"}
+                  to="/coins/network"
+                >
+                  {t("netwoks")}
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className={ isPathActive("/coins/asset") ? "nav-link active": "nav-link"}
+                  to="/coins/asset"
+                >
+                  {t("assets")}
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className={ isPathActive("/coins/pair") ? "nav-link active": "nav-link"}
+                  to="/coins/pair"
+                >
+                  {t("pairs")}
+                </Link>
+              </li>
+            </ul>
+          </Collapse>
+        </li>
         <li className={isPathActive("/users") ? "nav-item active" : "nav-item"}>
           <Link className="nav-link" to="/users">
             <span className="menu-title">{t("users")}</span>
@@ -85,12 +127,6 @@ const Sidebar = (props) => {
           <Link className="nav-link" to="/news">
             <span className="menu-title">{t("news")}</span>
             <i className="mdi mdi mdi-newspaper menu-icon"></i>
-          </Link>
-        </li>
-        <li className={isPathActive("/coins") ? "nav-item active" : "nav-item"}>
-          <Link className="nav-link" to="/coins">
-            <span className="menu-title">{t("coins")}</span>
-            <i className="mdi mdi mdi-coin menu-icon"></i>
           </Link>
         </li>
         {/* <li

@@ -12,33 +12,36 @@ import Spinner from "component/spinner";
 
 const dashboard = lazy(() => import("route/dashboard/dashboard"));
 const users = lazy(() => import("route/users/users"));
-const coins = lazy(() => import("route/coins/coins"));
-const news = lazy(() => import("route/news/news"));
-const constans = lazy(() => import("route/setting/constans"));
-const addNews = lazy(() => import("route/news/add"));
-const editNews = lazy(() => import("route/news/edit"));
+const coins = lazy(() => import("route/coins/index"));
+// const news = lazy(() => import("route/news/news"));
+// const constans = lazy(() => import("route/setting/constans"));
+// const addNews = lazy(() => import("route/news/add"));
+// const editNews = lazy(() => import("route/news/edit"));
 
 const login = lazy(() => import("route/sign/login"));
+const activate = lazy(() => import("route/sign/activate"));
 
 const route = {
   home: [
     { path: "/dashboard", component: dashboard },
     { path: "/users", component: users },
-    { path: "/coins", component: coins },
-    { path: "/news", component: news },
-    { path: "/setting/constans", component: constans },
-    { path: "/news/add", component: addNews },
-    { path: "/news/edit", component: editNews },
+    { path: "/coins/*", component: coins },
+    // { path: "/coins", component: coins },
+    // { path: "/news", component: news },
+    // { path: "/setting/constans", component: constans },
+    // { path: "/news/add", component: addNews },
+    // { path: "/news/edit", component: editNews },
   ],
-  sign: [{ path: "/login", component: login }],
+  sign: [
+    { path: "/login", component: login },
+    { path: "/activate", component: activate }
+  ],
 };
 const AppRoutes = (props) => {
   const history = useHistory();
   const location = useLocation();
-  const {
-    setting: { isLoged },
-  } = useStorage();
-  console.log(isLoged);
+  const {  setting: { isLoged }} = useStorage();
+
   const list = route[isLoged ? "home" : "sign"];
   const isRoute = list.find((e) => e.item == location.pathname);
 

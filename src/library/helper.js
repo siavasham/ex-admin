@@ -75,6 +75,17 @@ export function num(txt) {
 export function isFloat(num) {
   return typeof num === "number" && !Number.isInteger(num);
 }
+export function handleError({error= null , errors = null}) {
+  if (error) return error.replace(/_/g,' ');
+  else {
+    let temp = [];
+    for (let err in errors) {
+      temp.push('<p>'+errors[err].join('')+'</p>')
+    }
+    return temp.join('');
+  }
+  
+}
 export function query(param) {
   let xquery = window.location.search.substring(1);
   let vars = xquery.split("&");

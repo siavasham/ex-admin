@@ -14,8 +14,8 @@ const App = (props) => {
   const [state, setState] = useState({});
   const location = useLocation();
   useEffect(() => {
-    const body = document.querySelector("body");
-    body.classList.add("rtl");
+    // const body = document.querySelector("body");
+    // body.classList.add("rtl");
     // body.classList.remove("rtl");
     // i18n.changeLanguage("en");
     window.addEventListener("message", (event) => {
@@ -24,7 +24,7 @@ const App = (props) => {
       }
     });
     window.scrollTo(0, 0);
-    document.title = t("title");
+    // document.title = t("title");
   }, []);
   useEffect(() => {
     const body = document.querySelector("body");

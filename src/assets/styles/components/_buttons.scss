@@ -109,11 +109,11 @@
     @include button-inverse-variant($value);
   }
   .btn-#{$color}:not(.btn-light) {
-    color: $black;
+    color: $white;
     &:hover,
     &:focus,
     &:active {
-      color: $black;
+      color: $white;
     }
     &:focus,
     &:active {

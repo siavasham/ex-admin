@@ -139,6 +139,8 @@ a:hover {
 .MuiPaper-root *,
 .MuiTooltip-tooltip {
   font-family: iranyekan !important;
+}
+.MuiPaper-root td>div{
   border-bottom: 0 !important;
 }
 .MuiTableCell-head,
@@ -150,6 +152,9 @@ a:hover {
 }
 .MuiTableCell-alignRight {
   flex-direction: inherit !important;
+}
+.MuiInputBase-input{
+  min-width: 50px !important;
 }
 .breadcrumb {
   direction: ltr;
@@ -185,4 +190,39 @@ a:hover {
 .news-img-temp {
   width: 100%;
   max-height: 220px;
+}
+.neo{
+  border-radius: 5px;
+  box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff !important;
+}
+.action-icon{
+  color: #212121;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+.multi__control{
+  background: transparent!important;
+}
+.multi__control{
+  padding: 6px;
+}
+.multi__multi-value  {
+  padding: 5px;
+  border-radius: 10px !important;
+  background: linear-gradient(to right, #547c9c, #047edf 99%) !important;
+}
+.multi__multi-value__label{
+  color:#fff!important;
+}
+.multi__multi-value__remove{
+  background: transparent !important; 
+}
+.bg-detail{
+  background: #eee;
+  position: relative;
+  min-height: 100px;
 }

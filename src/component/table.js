@@ -2,7 +2,7 @@ import React, { forwardRef, useState, useImperativeHandle } from "react";
 import { t } from "locales";
 import { get, post } from "library/request";
 import useStorage from "reducer";
-import Tick, { TickData } from "component/tick";
+import Tick from "component/tick";
 import MaterialTable from "material-table";
 
 import AddBox from "@material-ui/icons/AddBox";
@@ -21,6 +21,7 @@ import SaveAlt from "@material-ui/icons/SaveAlt";
 import Search from "@material-ui/icons/Search";
 import ViewColumn from "@material-ui/icons/ViewColumn";
 import AutorenewIcon from "@material-ui/icons/Autorenew";
+import FileCopyIcon from '@material-ui/icons/FileCopyOutlined';
 
 const tableIcons = {
   Add: forwardRef((props, ref) => <AddBox {...props} ref={ref} />),
@@ -49,14 +50,24 @@ export default forwardRef(
   ({ link, actions = [], editable = {}, options = {}, ...props }, ref) => {
     const tableRef = React.createRef();
     const [filter, setFilter] = useState(false);
-    const {
-      setting: { token },
-    } = useStorage();
-    useImperativeHandle(ref, () => ({
+    const [initialFormData ,setInitialFormData]= useState({})
+    const { setting: { token }} = useStorage();
+
+    useImperativeHandle(ref, (...rest) => ({
       refresh() {
         tableRef.current && tableRef.current.onQueryChange();
-      },
+      }
     }));
+    const dupicate = (row)=>{
+      const materialTable = tableRef.current;
+      setInitialFormData(row)
+      materialTable.dataManager.changeRowEditing();
+      materialTable.setState({
+        ...materialTable.dataManager.getRenderState(),
+        showAddRow: true,
+      });
+    }
+
     return (
       <div className="card px-3">
         <MaterialTable
@@ -72,6 +83,7 @@ export default forwardRef(
             rowStyle: (row, i) =>
               i % 2 == 0 ? { background: "rgba(0 ,0 ,0, .01)" } : {},
           }}
+          initialFormData={initialFormData}
           {...props}
           data={(query) => {
             const data = {
@@ -84,11 +96,11 @@ export default forwardRef(
             };
             return new Promise((resolve, reject) => {
               post("list", { token, ...data, table: link }).then((res) => {
-                if (res?.success) {
+                if (res?.message == 'Success') {
                   resolve({
-                    data: res?.success?.data,
-                    totalCount: res?.success?.total,
-                    page: +res?.success?.page,
+                    data: res?.data?.list,
+                    totalCount: res?.data?.total,
+                    page: +res?.data?.page,
                   });
                 } else {
                   reject();
@@ -96,6 +108,7 @@ export default forwardRef(
               });
             });
           }}
+          /*
           localization={{
             body: {
               emptyDataSourceMessage: "اطلاعاتی یافت نشد",
@@ -142,23 +155,33 @@ export default forwardRef(
               searchTooltip: "جست و جو",
               searchPlaceholder: "جست و جو",
             },
-          }}
+          }}          */
           actions={[
             {
               icon: () => <AutorenewIcon />,
-              tooltip: "ریفرش",
+              tooltip: "refresh list",
               isFreeAction: true,
               onClick: () =>
                 tableRef.current && tableRef.current.onQueryChange(),
             },
             {
               icon: () => <FilterList />,
-              tooltip: "جست و جو",
+              tooltip: "search",
               isFreeAction: true,
               onClick: () => setFilter(!filter),
             },
+            ...(props?.duplicate
+              ?
+              [{
+                icon: ()=> <FileCopyIcon />,
+                tooltip: 'duplicate',
+                onClick: (event, rowData) => {dupicate(rowData); }
+              }]
+              : []
+            ),
             ...actions,
           ]}
+
           cellEditable={{
             onCellEditApproved: (newValue, oldValue, rowData, columnDef) => {
               return new Promise((resolve, reject) => {
@@ -173,7 +196,7 @@ export default forwardRef(
                   data: JSON.stringify(data),
                   table: link,
                 }).then((res) => {
-                  if (res?.success) {
+                  if (res?.message == 'Success') {
                     rowData[field] = newValue;
                     resolve();
                   } else {
@@ -194,7 +217,7 @@ export default forwardRef(
                         data: JSON.stringify(data),
                         table: link,
                       }).then((res) => {
-                        if (res?.success) {
+                        if (res?.message == 'Success') {
                           resolve();
                         } else {
                           reject();
@@ -206,12 +229,13 @@ export default forwardRef(
                 ? null
                 : (data, oldData) =>
                     new Promise((resolve, reject) => {
+                      console.log('editing')
                       post("update", {
                         token,
                         data: JSON.stringify(data),
                         table: link,
                       }).then((res) => {
-                        if (res?.success) {
+                        if (res?.message == 'Success') {
                           resolve();
                         } else {
                           reject();
@@ -228,7 +252,7 @@ export default forwardRef(
                         id: data.id,
                         table: link,
                       }).then((res) => {
-                        if (res?.success) {
+                        if (res?.message == 'Success') {
                           resolve();
                         } else {
                           reject();
@@ -242,4 +266,4 @@ export default forwardRef(
   }
 );
 
-export { Tick, TickData };
+export { Tick };

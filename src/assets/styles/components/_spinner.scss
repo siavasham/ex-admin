@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - #{$navbar-height} - 5.5rem);
-  position: fixed;
-  width: calc(100% - #{$sidebar-width-lg} - 4rem);
+  position: absolute;
+  height: 100% ;
+  width: 100% ;
   z-index: 9999;
   @media (max-width: 991px) {
     width: 100%;
@@ -28,17 +28,6 @@
   top: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.5);
-}
-:host-context(.sidebar-icon-only) {
-  .spinner-wrapper {
-    width: calc(100% - #{$sidebar-width-icon} - 4rem);
-  }
-}
-
-:host-context(.sidebar-mini) {
-  .spinner-wrapper {
-    width: calc(100% - #{$sidebar-width-mini} - 4rem);
-  }
 }
 
 @keyframes spin {

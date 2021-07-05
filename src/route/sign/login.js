@@ -7,6 +7,7 @@ import Input from "component/input";
 import _ from "lodash";
 import useStorage from "reducer";
 import Alert from "react-bootstrap/Alert";
+import { handleError ,validateEmail} from "library/helper";
 
 const Login = () => {
   const { session, setSession, setSetting } = useStorage();
@@ -19,13 +20,16 @@ const Login = () => {
     setSession({ [name]: value });
   };
   const validate = () => {
-    const { username = "", password = "" } = session;
+    const { email = "", password = "" } = session;
     const temp = {};
     if (password.length < 5) {
-      temp["password"] = "validation.min";
+      temp["password"] = "validation min";
     }
-    for (let i of [username, password]) {
-      if (i == "") temp[i] = "validation.empty";
+    if (!validateEmail(email)) {
+      temp["email"] = "validation email";
+    }
+    for (let i of [email, password]) {
+      if (i == "") temp[i] = "validation empty";
     }
     const res = _.isEmpty(temp) ? null : temp;
     setError(res);
@@ -35,20 +39,14 @@ const Login = () => {
     e.preventDefault();
     if (validate() == null) {
       setLoading(true);
-      const { username, password } = session;
-      post("login", { username, password }).then((data) => {
+      const { email, password } = session;
+      post("login", { email, password }).then((res) => {
         setLoading(false);
-        if (data.success) {
-          setSetting({ login: data.success });
-        } else if (data.error) {
-          if (typeof data.error == "string") setResError(data.error);
-          else {
-            const temp = {};
-            for (let i in data.error) {
-              temp[i] = [i, data.error[i][0]];
-            }
-            setError(temp);
-          }
+        if (res.message == 'Success') {
+          setSession({ token: res.data.token });
+          history.push('/activate')
+        } else {
+          setResError(handleError(res.data));
         }
       });
     }
@@ -58,17 +56,17 @@ const Login = () => {
       <div className="d-flex align-items-center auth px-0">
         <div className="row w-100 mx-0">
           <div className="col-md-7 col-lg-6 mx-auto box-max">
-            <div className="auth-form-light  py-4 px-4 px-sm-5">
-              <div className="brand-logo text-center">
+            <div className="auth-form-light neo py-4 px-4 px-sm-5">
+              <div className="brand-logo">
                 <img src={require("assets/images/logo.png")} alt="logo" />
               </div>
               {/* <h4>{t("login")}</h4> */}
               <form className="pt-3" autoComplete="off" onSubmit={onSubmit}>
                 <Input
-                  name={"username"}
-                  value={session?.username}
-                  onChange={(v) => onChange("username", v)}
-                  error={error?.username}
+                  name={"email"}
+                  value={session?.email}
+                  onChange={(v) => onChange("email", v)}
+                  error={error?.email}
                 />
                 <Input
                   type="password"
