@@ -2,12 +2,18 @@
   .nav-link {
     background: $nav-tabs-link-bg;
     color: $nav-tabs-link-color;
-    border-radius: 0;
+    // border-radius: 0;
     border: 1px solid $border-color;
     padding: 0.75rem 1.5rem;
     font-size: $default-font-size;
+    margin-right: 1px;
     @media (max-width: 767px) {
       padding: 0.75rem 1rem;
+    }
+    &.active{
+      border-color: transparent;
+      background: linear-gradient(to right, #da8cff, #9a55ff);
+      color: #fff !important;
     }
   }
   .nav-item {

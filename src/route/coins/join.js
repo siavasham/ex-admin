@@ -13,19 +13,14 @@ export default function AnimatedMulti({ from, id }) {
     const { setting: { token } , session , setSession} = useStorage();
     const [loading, setLoading] = useState(true);
     const [list, setList] = useState([]);
-    const idref = useRef({});
+    const [option, setOption] = useState([]);
+
     const to = from == 'asset' ? 'network' : 'asset';
     useEffect(() => {
-        if (!session?.[to]) {
-            post("list", { token, pageSize: 1000, table: to }).then((res) => {
-                if (res?.message == 'Success') {
-                    const temp = [];
-                    for (let i of res.data.list)
-                        temp.push({ value: i.id, label: i.name })
-                    setSession({ [to]: temp });
-                }
-            });
-        }
+        const temp = [];
+        for (let i in session?.[to])
+            temp.push({ value: i, label:  session?.[to][i] })
+        setOption(temp);
         const where = JSON.stringify({ [from]: id });
         post("list", { token, pageSize: 1000, table: 'assetNetwork', where }).then((res) => {
             if (res?.message == 'Success') {
@@ -66,10 +61,10 @@ export default function AnimatedMulti({ from, id }) {
         }
         setList(temp)
     }
-    const values = (session?.[to] ?? []).filter(e => list.includes(e.value));
+    const values = option.filter(e => list.includes(+e.value));
 
     return (
-        <div className="py-4 px-2 bg-detail" >
+        <div className="py-4 px-2 bg-detail min" >
             {loading
                 ?
                 <Spinner forDiv />
@@ -85,7 +80,7 @@ export default function AnimatedMulti({ from, id }) {
                     value={values}
                     onChange={selectedOption}
                     isMulti
-                    options={session?.[to] ?? []}
+                    options={option}
                 />
             </>
             }

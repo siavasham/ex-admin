@@ -114,6 +114,22 @@ const Sidebar = (props) => {
                   {t("pairs")}
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link
+                  className={ isPathActive("/coins/wallet") ? "nav-link active": "nav-link"}
+                  to="/coins/wallet"
+                >
+                  {t("wallets")}
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className={ isPathActive("/coins/address") ? "nav-link active": "nav-link"}
+                  to="/coins/address"
+                >
+                  {t("addresses")}
+                </Link>
+              </li>
             </ul>
           </Collapse>
         </li>

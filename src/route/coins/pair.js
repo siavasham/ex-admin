@@ -2,14 +2,13 @@ import React,{useRef,useEffect ,useState} from 'react';
 import Breadcrumb from "component/breadcrumb";
 import { t } from "locales";
 import Table, { Tick } from "component/table";
-import constans from "config/constans";
 import Spinner from "component/spinner";
 import { post } from "library/request";
 import useStorage from "reducer";
 
 export default function () {
   const tableRef = useRef();
-  const { setting: { token }} = useStorage();
+  const { setting: { token } , session :{constans}} = useStorage();
   const [loading, setLoading] = useState(true);
   const [coins, setCoins] = useState({});
   useEffect(() => {

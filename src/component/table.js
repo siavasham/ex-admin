@@ -58,6 +58,7 @@ export default forwardRef(
         tableRef.current && tableRef.current.onQueryChange();
       }
     }));
+    
     const dupicate = (row)=>{
       const materialTable = tableRef.current;
       setInitialFormData(row)
@@ -95,7 +96,8 @@ export default forwardRef(
               pageSize: query?.pageSize,
             };
             return new Promise((resolve, reject) => {
-              post("list", { token, ...data, table: link }).then((res) => {
+              const where = props?.where ? {where:JSON.stringify(props.where)} :{};
+              post("list", { token, ...data, table: link , ...where}).then((res) => {
                 if (res?.message == 'Success') {
                   resolve({
                     data: res?.data?.list,
@@ -211,10 +213,11 @@ export default forwardRef(
               editable?.canAdd === false
                 ? null
                 : (data) =>
-                    new Promise((resolve, reject) => {
+                  new Promise((resolve, reject) => {
+                    const send = editable?.addInitial ? { ...editable.addInitial, ...data } : data;
                       post("add", {
                         token,
-                        data: JSON.stringify(data),
+                        data: JSON.stringify(send),
                         table: link,
                       }).then((res) => {
                         if (res?.message == 'Success') {

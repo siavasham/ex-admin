@@ -156,6 +156,9 @@ a:hover {
 .MuiInputBase-input{
   min-width: 50px !important;
 }
+.MuiTableCell-root:not(.MuiTableCell-paddingNone),.MuiIconButton-root{
+  padding: 7px !important;
+}
 .breadcrumb {
   direction: ltr;
 }
@@ -224,5 +227,7 @@ a:hover {
 .bg-detail{
   background: #eee;
   position: relative;
+}
+.bg-detail.min{
   min-height: 100px;
 }

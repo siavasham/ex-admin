@@ -2,11 +2,12 @@ import React, { useRef } from "react";
 import Breadcrumb from "component/breadcrumb";
 import { t } from "locales";
 import Table, { Tick } from "component/table";
-import constans from "config/constans";
 import Join from "./join";
+import useStorage from "reducer";
 
 export default function () {
   const tableRef = useRef();
+  const {  session :{constans}} = useStorage();
   return (
     <>
       <Breadcrumb title="asset" icon="mdi-coin" />
